@@ -4,37 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ГІТ</title>
 </head>
 
 <body>
-    <h1>Шпаргалка по GIT!</h1>
-    <ul>
-        <li>git config --global user.name blabla - команда яка добавляє в глобальний конфіг користувача з імям blabla
-        </li>
-        <li>git config --global user.email blabal@bla - команда яка добавляє в глобальний конфіг користувача з email
-            blabal@bla</li>
-        <li>git init - команда яка встановлює git в поточну директорію</li>
-        <li>git status - показує статус роботи git</li>
-        <li>git add - добавляє файл або всі файли в staged</li>
-        <li>git commit - файли з staged фіксує в локальний репозиторій, в лапках вказується короткий опис змін</li>
-        <li>git log - історія версій поточної гілки </li>
-        <li>git checkout - використовується для переключення гілок</li>
-        <li>git branch - команда для керування гілками</li>
-        <li>git push - надсилання змін до відділеного репозиторію</li>
-        <li>git pull - отримання змін з відділеного репозиторію</li>
-        <li>git merge - зливання однієї чи більше гілок до пточної</li>
-        <li>git clone - копія GIT репозиторію </li>
-        <li>файл .gitignore - файл містить список файлів які будуть ігноруватись git'ом</li>
-    </ul>
-    <h2>Advanced</h2>
-    <ul>
-        <li>git revert - скасовує комміт</li>
-        <li>git reset - </li>
-        <li>git rebase</li>
-        <li>git cherry-pick</li>
-        <li>git stash</li>
-    </ul>
+    <div class="wrapper">
+        <div class="head_img">
+            <img class="image" width="720px" height="340px" src="/homework01/img/git.png" alt="git">
+        </div>
+        <h1 class="head">Шпаргалка по GIT!</h1>
+        <ul class="list">
+            <li>git config --global user.name blabla - команда яка добавляє в глобальний конфіг користувача з імям
+                blabla
+            </li>
+            <li>git config --global user.email blabal@bla - команда яка добавляє в глобальний конфіг користувача з email
+                blabal@bla</li>
+            <li>git init - команда яка встановлює git в поточну директорію</li>
+            <li>git status - показує статус роботи git</li>
+            <li>git add - добавляє файл або всі файли в staged</li>
+            <li>git commit - файли з staged фіксує в локальний репозиторій, в лапках вказується короткий опис змін</li>
+            <li>git log - історія версій поточної гілки </li>
+            <li>git checkout - використовується для переключення гілок</li>
+            <li>git branch - команда для керування гілками</li>
+            <li>git push - надсилання змін до відділеного репозиторію</li>
+            <li>git pull - отримання змін з відділеного репозиторію</li>
+            <li>git merge - зливання однієї чи більше гілок до пточної</li>
+            <li>git clone - копія GIT репозиторію </li>
+            <li>файл .gitignore - файл містить список файлів які будуть ігноруватись git'ом</li>
+        </ul>
+        <h2 class="head2">Advanced</h2>
+        <ul class="list">
+            <li>git revert - скасовує комміт</li>
+            <li>git reset - команда для скасування змін</li>
+            <li>git rebase - це переміщення або комбінування комітів однієї гілки над іншою.</li>
+            <li>git cherry-pick - команда щоб взяти впроваджені в одному коміті Git зміни, та спробувати застосувати їх
+                як
+                новий коміт на поточній гілці.</li>
+            <li>git stash - команда відкладає деякі зміни зроблені в робочій копії щоб застосувати їх пізніше</li>
+        </ul>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.wrapper {
+    margin: 5px;
+}
+
+.head,
+.head2 {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.head_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    margin: 10px 30px;
+}
+
+li {
+    font-size: 18px;
+}
