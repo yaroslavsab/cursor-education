@@ -7,16 +7,8 @@ html {
     box-sizing: border-box;
 }
 
-header,
-section,
-main,
-nav,
-footer,
-article,
-figure,
-hgroup {
-    display: block;
-    width: 100%;
+body {
+    background-color: rgb(245, 231, 231);
 }
 
 .first_cookies {
@@ -178,7 +170,7 @@ hgroup {
 }
 
 .fourth_cookies button {
-    width: 49px;
+    width: 59px;
     height: 28px;
     border-style: none;
     cursor: pointer;
@@ -197,7 +189,7 @@ hgroup {
     background: rgba(28, 37, 64, 0.95);
     box-shadow: 0px 0px 1px 0px rgba(96, 96, 96, 0.10), 0px 12px 24px -6px rgba(96, 96, 96, 0.15);
     color: #FFF;
-
+    margin-bottom: auto;
 }
 
 .text_container {
@@ -221,6 +213,13 @@ hgroup {
     margin: 0;
 }
 
+.fifth_cookies .text_container p {
+    color: #FFF;
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 20px;
+}
+
 .fifth_cookies .manage {
     display: flex;
     justify-content: space-between;
@@ -229,7 +228,12 @@ hgroup {
 }
 
 .fifth_cookies .manage p {
-    width: 164px;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 .fifth_cookies .manage button {
@@ -239,11 +243,13 @@ hgroup {
     background: #09B3AF;
     box-shadow: 0px 2px 2px -2px rgba(34, 38, 50, 0.30);
     padding: 8px 20px;
+    color: #FFF;
 }
 
 .container {
     display: flex;
     gap: 40px;
+    margin-bottom: 72px;
 }
 
 .six_cookies {
@@ -256,6 +262,7 @@ hgroup {
     border-radius: 16px;
     background: #FFF;
     box-shadow: 0px 0px 1px 0px rgba(96, 96, 96, 0.10), 0px 12px 24px -6px rgba(96, 96, 96, 0.15);
+    margin-bottom: 72px;
 }
 
 .six_cookies h3 {
@@ -282,10 +289,101 @@ hgroup {
     border-style: none;
     width: 144px;
     padding: 8px;
+    cursor: pointer;
 }
 
 .six_cookies .button_container .active {
     background: #40C1A7;
     color: #FFFFFF;
     margin-left: 8px;
+}
+
+
+.seventh_cookies {
+    display: flex;
+    width: 320px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.88%, rgba(255, 255, 255, 0.15) 100%), #FFF;
+    box-shadow: 0px 8px 32px 0px rgba(10, 3, 89, 0.10);
+
+}
+
+.seventh_cookies h3 {
+    color: #15295A;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 48px;
+    margin: 0 auto;
+}
+
+.seventh_cookies p {
+    color: #15295A;
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    line-height: 24px;
+    margin: 0;
+}
+
+.seventh_cookies button {
+    border-radius: 43px;
+    background: #4A7EFF;
+    cursor: pointer;
+    border-style: none;
+    padding: 10px 32px;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.nineth_cookies {
+    display: flex;
+    width: 320px;
+    padding: 16px;
+    flex-direction: column;
+
+    gap: 12px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 8px 32px 0px rgba(10, 3, 89, 0.10);
+    height: 137px;
+    margin: 0;
+}
+
+.nineth_cookies p {
+    color: #000;
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 20px;
+}
+
+.nineth_cookies .button_container {
+    display: flex;
+    justify-content: space-between;
+    width: 288px;
+    align-items: center;
+}
+
+.nineth_cookies .button_container a {
+    color: #66F;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nineth_cookies .button_container button {
+    border-radius: 4px;
+    background: #66F;
+    border-style: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #FFFFFF;
 }
