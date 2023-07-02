@@ -33,7 +33,10 @@ h6 {
     font-size: inherit;
 }
 
-.wrapper {}
+.wrapper {
+    max-width: 1440px;
+    overflow: hidden;
+}
 
 html,
 body {
@@ -209,18 +212,22 @@ input[type="text"] {
     width: 1440px;
     height: 435px;
     background-color: #FAFAFA;
+    position: relative;
 }
 
-.footer_container {}
+.footer_container {
+    padding: 85px 196px 86px 186px;
+}
 
 .footer_container h3 {
     color: #101010;
-    text-align: center;
     font-size: 18px;
     font-family: Lato;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    margin-bottom: 33px;
 }
 
 .column {
@@ -234,4 +241,41 @@ input[type="text"] {
 
 .copyright {
     text-align: left;
+}
+
+.adress p {
+    color: #101010;
+    font-size: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 170px;
+}
+
+.services ul {
+    color: #000;
+    font-size: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.touch a {
+    color: #101010;
+    font-size: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    position: absolute;
+    top: 335px;
+    left: 161px;
 }
