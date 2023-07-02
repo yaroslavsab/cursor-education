@@ -205,11 +205,13 @@ input[type="text"] {
     padding-left: 20px;
 }
 
-.footer_container {
+.footer {
     width: 1440px;
+    height: 435px;
     background-color: #FAFAFA;
-    ;
 }
+
+.footer_container {}
 
 .footer_container h3 {
     color: #101010;
@@ -228,15 +230,7 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-.column:last-child {
-    width: auto;
-    float: none;
-}
 
-.float {
-    width: auto;
-    float: none;
-}
 
 .copyright {
     text-align: left;
