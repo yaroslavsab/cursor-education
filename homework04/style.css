@@ -34,8 +34,8 @@ h6 {
 }
 
 .wrapper {
-    max-width: 1440px;
-    overflow: hidden;
+    min-width: 1440px;
+
 }
 
 html,
@@ -44,7 +44,7 @@ body {
 }
 
 .header {
-    max-width: 1440px;
+    min-width: 100%;
     height: 500px;
     background-color: #ED4C5C;
 }
@@ -59,6 +59,10 @@ body {
     display: inline-block;
 }
 
+.text_container {
+    float: left;
+}
+
 h1 {
     color: #FFF;
     font-size: 36px;
@@ -71,8 +75,8 @@ h1 {
 }
 
 .text_container {
-    margin-right: 81px;
-    vertical-align: top;
+    margin-right: 125px;
+
 }
 
 .text_container p {
@@ -94,6 +98,7 @@ h1 {
 
 .headerimg_container {
     position: relative;
+    display: flow-root;
 }
 
 .main_image {
@@ -101,18 +106,21 @@ h1 {
     top: 0;
     left: 0;
     z-index: 2;
+
 }
 
 .img_bg1 {
     position: absolute;
     top: 22px;
     left: -44px;
+    opacity: 0.5;
 }
 
 .img_bg2 {
     position: absolute;
     left: 103px;
     top: 22px;
+    opacity: 0.5;
 }
 
 .main_container {
@@ -126,8 +134,9 @@ h1 {
 
 
 .contact {
-    display: inline-block;
+
     float: left;
+    width: 46%;
 }
 
 .contact h2 {
@@ -154,7 +163,8 @@ h1 {
 }
 
 .main_form {
-    display: inline-block;
+    float: left;
+    width: 46%;
 }
 
 .first,
@@ -168,7 +178,7 @@ h1 {
 
 .first,
 .last {
-    width: 255px;
+    width: 46%;
 
 }
 
@@ -183,7 +193,7 @@ select {
 
 .phone,
 .select {
-    width: 540px;
+    width: 99%;
     padding-left: 20px;
 }
 
@@ -234,7 +244,7 @@ input[type="text"] {
     width: 25%;
     float: left;
     padding: 10px;
-    box-sizing: border-box;
+
 }
 
 
