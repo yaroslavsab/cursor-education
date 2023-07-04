@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(51, 45, 45, 0.897);
+
+}
+
+table {
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    border: 2px solid #676766;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.myTable td,
+.myTable th {
+    border-top: 1px solid #676766;
+    padding: 10px 15px;
+
+    color: rgba(222, 226, 230, 0.897);
+}
+
+.downarrow {
+    padding-left: 5px;
+    height: 10px;
+    cursor: pointer;
+}
+
+th {
+    width: 33.333%;
+}
+
+thead th {
+    color: #fff;
+    padding: 10px;
+    height: 35px;
+    text-align: left;
+
+}
+
+.myTable .dots {
+    text-align: right;
+    padding-right: 15px;
+}
+
+.myTable .file {}
+
+.file label {
+    padding-left: 10px;
+}
+
+.myTable tr:hover {
+    background-color: rgb(107, 103, 97);
+    transition: 0.2s ease 0s;
+}
+
+.search {
+    border-style: none;
+    width: 98%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(128, 125, 122);
+    padding-left: 25px;
+}
+
+.searchimg {
+    width: 20px;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    z-index: 2;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+#searchTh {
+    position: relative;
+    padding: 0;
+    padding-right: 4px;
+
+}
+
+.archiveimg {
+    width: 20px;
+    margin-right: 8px;
+}

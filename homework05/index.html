@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиці, інпути та форми, семантика тегів.</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <table class="myTable" width="600px" height="150px">
+            <thead>
+                <tr>
+                    <th>Name <span><img class="downarrow" src="../homework05/img/down-arrow.png" alt="arrow"></span>
+                    </th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file">file.pdf</td>
+                    <td>3 mins ago</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="file">file.pdf</td>
+                    <td>Yesterday</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="file">file.pdf</td>
+                    <td>June 1st 2019</td>
+                    <td class="dots">...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <table class="myTable" width="600px" height="150px">
+            <thead>
+                <tr>
+                    <th>Name <span><img class="downarrow" src="../homework05/img/down-arrow.png" alt="arrow"></span>
+                    </th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file">
+                        <input type="checkbox" name="file" id="file1"> <label for="file1">file.pdf</label>
+                    </td>
+                    <td>3 mins ago</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="file">
+                        <input type="checkbox" checked name="file2" id="file2"> <label for="file2">file.pdf</label>
+                    </td>
+                    <td>Yesterday</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="file">
+                        <input type="checkbox" name="file3" id="file3"> <label for="file3">file.pdf</label>
+                    </td>
+                    <td>June 1st 2019</td>
+                    <td class="dots">...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <table class="myTable" width="600px" height="150px">
+            <thead>
+                <tr>
+                    <th>Name <span><img class="downarrow" src="../homework05/img/down-arrow.png" alt="arrow"></span>
+                    </th>
+                    <th>Date</th>
+                    <th id="searchTh">
+                        <label> <img class="searchimg" src="../homework05/img/search.png" alt="search">
+                            <input class="search" type="text" name="input" placeholder="Search">
+                        </label>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="arhive">
+                        <img src="../homework05/img/archive.png" class="archiveimg" alt="archive" width="10px">
+                        file.pdf
+                    </td>
+                    <td>3 mins ago</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="arhive">
+                        <img src="../homework05/img/archive.png" class="archiveimg" alt="archive" width="10px">
+                        file.pdf
+                    </td>
+                    <td>Yesterday</td>
+                    <td class="dots">...</td>
+                </tr>
+                <tr>
+                    <td class="arhive">
+                        <img src="../homework05/img/archive.png" class="archiveimg" alt="archive" width="10px">
+                        file.pdf
+                    </td>
+                    <td>June 1st 2019</td>
+                    <td class="dots">...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
