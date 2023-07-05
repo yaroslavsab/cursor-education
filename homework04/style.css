@@ -67,6 +67,8 @@ hgroup {
 }
 
 .text_container {
+    position: relative;
+    z-index: 2;
     float: left;
 }
 
@@ -83,7 +85,7 @@ hgroup {
     position: relative;
     top: 0;
     left: 125px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .img_bg1 {
