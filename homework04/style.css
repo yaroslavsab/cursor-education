@@ -261,9 +261,7 @@ select {
 }
 
 .copyright {
-    position: relative;
-    top: 122px;
-    left: -803px;
+    clear: both;
     color: #101010;
     font-size: 12px;
     font-family: Lato;
