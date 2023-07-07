@@ -106,6 +106,7 @@ body {
 
 .header .container {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .nav {
@@ -207,8 +208,49 @@ body {
 
 }
 
-
+/*========================================================*/
 
 .main {
     flex: 1 1 auto;
+}
+
+.storage {
+    display: flex;
+    border-radius: 50px;
+    background: rgba(240, 99, 184, 0.15);
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.storage img {
+    width: 477px;
+    height: 504px;
+}
+
+.storage_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.storage_text h2 {
+    color: #212353;
+    width: 475px;
+    /* SubHeadline */
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.storage_text p {
+    width: 474px;
+    color: var(--1, #4B5D68);
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
 }
