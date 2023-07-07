@@ -1,0 +1,14 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 64">
+<circle id="Ellipse 68" opacity="0.2" cx="30" cy="30" r="30" fill="#9C69E2"/>
+<g id="Group 62">
+<path id="Rectangle 42" d="M15 26C15 20.4772 19.4772 16 25 16H35C40.5228 16 45 20.4772 45 26V30C45 35.5228 40.5228 40 35 40H15V26Z" fill="#9C69E2"/>
+<g id="Group 63">
+<circle id="Ellipse 69" cx="24" cy="28" r="2" fill="white"/>
+<circle id="Ellipse 70" cx="30" cy="28" r="2" fill="white"/>
+<circle id="Ellipse 71" cx="36" cy="28" r="2" fill="white"/>
+</g>
+<path id="Rectangle 43" d="M25 39H15V41.4676C15 43.0222 16.6959 43.9824 18.029 43.1826L25 39Z" fill="#9C69E2"/>
+</g>
+</g>
+</svg>
