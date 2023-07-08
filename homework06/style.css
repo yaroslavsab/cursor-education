@@ -436,3 +436,8 @@ body {
     width: 33px;
     height: 14px;
 }
+
+.footer {
+    opacity: 0.20000000298023224;
+    background: var(--3, #9C69E2);
+}
