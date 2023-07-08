@@ -92,7 +92,7 @@ h6 {
 
     font-family: "Avenir";
 
-    src: url("/homework06/fonts/avenir_ff/AvenirLTStd-Book.otf") format("opentype");
+    src: url("../homework06/fonts/avenir_ff/AvenirLTStd-Book.otf") format("opentype");
 
 }
 
