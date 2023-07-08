@@ -350,6 +350,7 @@ body {
     justify-content: space-between;
     padding: 109px 76px 60px 93px;
     gap: 60px;
+
 }
 
 .testimonials h3 {
@@ -365,12 +366,11 @@ body {
 .fang {
     border-radius: 20px;
     background: #FFF;
-    box-shadow: 0px 20px 0px 0px rgba(156, 105, 226, 0.30);
+    box-shadow: 0px 20px 0px 0px rgb(60 32 98 / 30%);
     width: 949px;
     padding: 60px 102px 60px;
     display: flex;
     gap: 44px;
-    padding-bottom: 60px;
 
 }
 
@@ -382,7 +382,7 @@ body {
     font-weight: 900;
     line-height: 160%;
     letter-spacing: 0.09px;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 .text_testimols a {
@@ -403,7 +403,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
-    width: 550px;
+    width: 430px;
     padding-top: 19px;
 }
 
@@ -420,4 +420,8 @@ body {
 
 .arrow_control {
     align-self: end;
+}
+
+.arrows img {
+    padding-left: 20px;
 }
