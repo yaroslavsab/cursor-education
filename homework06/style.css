@@ -122,7 +122,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .menu_items a {
@@ -438,6 +438,143 @@ body {
 }
 
 .footer {
-    opacity: 0.20000000298023224;
-    background: var(--3, #9C69E2);
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFF 100%);
+    padding: 100px 0;
+}
+
+.try {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 59px;
+}
+
+.learn {
+
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: var(--4, #F063B8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%;
+}
+
+.text_try h3 {
+    color: #212353;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.text_try p {
+    color: var(--1, #4B5D68);
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+
+.data {
+    padding: 153px 0 93px;
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+}
+
+.warehouse_data_head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.warehouse_data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data h4 {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%;
+    padding-bottom: 30px;
+}
+
+#head_data {
+    padding-bottom: 0;
+}
+
+.warehouse_text {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.16px;
+    width: 234px;
+}
+
+.info_text {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.16px;
+    width: 145px;
+}
+
+.data li {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 250%;
+}
+
+.copyright {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.12px;
+
+
+}
+
+.copyright_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright_text div {
+    width: 240px;
 }
