@@ -88,15 +88,23 @@ h6 {
 }
 
 /*--------------------*/
+@font-face {
+
+    font-family: "Avenir";
+
+    src: url("/homework06/fonts/avenir_ff/AvenirLTStd-Book.otf") format("opentype");
+
+}
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, Avenir, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .container {
