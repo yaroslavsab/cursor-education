@@ -350,6 +350,7 @@ body {
     justify-content: space-between;
     padding: 109px 76px 60px 93px;
     gap: 60px;
+    margin-bottom: 150px;
 
 }
 
@@ -424,4 +425,14 @@ body {
 
 .arrows img {
     padding-left: 20px;
+}
+
+.arrows .arrow_control {
+    width: 40px;
+    height: 14px;
+}
+
+.arrows .arrowr2 {
+    width: 33px;
+    height: 14px;
 }
