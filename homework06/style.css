@@ -108,7 +108,7 @@ body {
 }
 
 .container {
-    width: 1118px;
+    max-width: 1118px;
     margin: 0 auto;
 }
 
@@ -122,6 +122,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 67px 0px 147px 0px;
+    flex-wrap: wrap;
 }
 
 
@@ -131,6 +132,7 @@ body {
     align-items: center;
     gap: 40px;
     flex-basis: 50%;
+    flex-wrap: wrap;
 }
 
 .menu_items a {
@@ -140,6 +142,11 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
+}
+
+.menu_items a:hover {
+    color: #F063B8;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .request {
@@ -160,7 +167,17 @@ body {
     font-weight: 800;
     line-height: 160%;
     letter-spacing: 0.08px;
+
 }
+
+.request:hover {
+    background-color: #F063B8;
+    color: #F6FAFD;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.request svg {}
 
 .header_img {
     width: 885px;
@@ -179,7 +196,7 @@ body {
 }
 
 .text_header h1 {
-    width: 645px;
+    max-width: 645px;
     color: var(--2, #212353);
     font-family: Helvetica;
     font-size: 80px;
@@ -195,11 +212,11 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
-    width: 380px;
+    max-width: 380px;
 }
 
 .text_header a {
-    width: 170px;
+    max-width: 170px;
     height: 60px;
     border-radius: 50px;
     background: var(--3, #9C69E2);
@@ -229,6 +246,7 @@ body {
     gap: 60px;
     align-items: center;
     margin-bottom: 150px;
+    flex-wrap: wrap;
 }
 
 .storage img {
@@ -244,7 +262,7 @@ body {
 
 .storage_text h2 {
     color: #212353;
-    width: 475px;
+    max-width: 475px;
     /* SubHeadline */
     font-family: Helvetica;
     font-size: 40px;
@@ -254,7 +272,7 @@ body {
 }
 
 .storage_text p {
-    width: 474px;
+    max-width: 474px;
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 18px;
@@ -278,7 +296,7 @@ body {
 }
 
 .text_features {
-    width: 584px;
+    max-width: 584px;
     color: var(--1, #4B5D68);
     margin: 50px auto 149px;
     text-align: center;
@@ -293,12 +311,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 90px;
+    justify-content: center;
 }
 
 .features_rows {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .features p {
@@ -308,7 +328,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    width: 220px;
+    max-width: 220px;
 }
 
 .features h3 {
@@ -325,6 +345,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .text_row a {
@@ -344,6 +365,7 @@ body {
     text-align: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .rows_img {
@@ -359,6 +381,7 @@ body {
     padding: 109px 76px 60px 93px;
     gap: 60px;
     margin-bottom: 150px;
+    flex-wrap: wrap;
 
 }
 
@@ -376,10 +399,11 @@ body {
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 20px 0px 0px rgb(60 32 98 / 30%);
-    width: 949px;
+    max-width: 949px;
     padding: 60px 102px 60px;
     display: flex;
     gap: 44px;
+    flex-wrap: wrap;
 
 }
 
@@ -412,7 +436,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
-    width: 430px;
+    max-width: 430px;
     padding-top: 19px;
 }
 
@@ -425,6 +449,7 @@ body {
 .controls {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .arrow_control {
@@ -454,11 +479,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .buttons {
     display: flex;
     gap: 59px;
+    flex-wrap: wrap;
 }
 
 .learn {
@@ -470,6 +497,7 @@ body {
     background: var(--4, #F063B8);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     color: #FFF;
     text-align: center;
@@ -503,8 +531,9 @@ body {
 .data {
     padding: 153px 0 93px;
     display: flex;
-    flex-basis: 25%;
+
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .warehouse_data_head {
@@ -542,7 +571,7 @@ body {
     font-weight: 500;
     line-height: 180%;
     letter-spacing: 0.16px;
-    width: 255px;
+    max-width: 255px;
 }
 
 .info_text {
@@ -553,7 +582,7 @@ body {
     font-weight: 400;
     line-height: 180%;
     letter-spacing: 0.16px;
-    width: 145px;
+    max-width: 145px;
 }
 
 .data li {
@@ -581,8 +610,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .copyright_text div {
-    width: 240px;
+    max-width: 240px;
 }
