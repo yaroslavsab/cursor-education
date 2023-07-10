@@ -141,11 +141,14 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 160%;
+
 }
 
-.menu_items a:hover {
-    color: #F063B8;
-    transition: all 0.4s ease-in-out 0s;
+.menu_items li:hover {
+    color: var(--2, #212353);
+    font-weight: bold;
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
 }
 
 .request {
