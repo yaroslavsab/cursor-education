@@ -139,7 +139,6 @@ body {
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 160%;
 }
@@ -155,7 +154,6 @@ body {
     border-radius: 50px;
     background: #FFF;
     box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.10);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +161,6 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 800;
     line-height: 160%;
     letter-spacing: 0.08px;
@@ -176,8 +173,6 @@ body {
     transition: all 0.3s ease-in-out 0s;
 }
 
-
-.request svg {}
 
 .header_img {
     width: 885px;
@@ -200,7 +195,6 @@ body {
     color: var(--2, #212353);
     font-family: Helvetica;
     font-size: 80px;
-    font-style: normal;
     font-weight: 700;
     line-height: 110%;
 }
@@ -227,7 +221,6 @@ body {
     text-align: center;
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
     line-height: 160%;
 
@@ -263,10 +256,8 @@ body {
 .storage_text h2 {
     color: #212353;
     max-width: 475px;
-    /* SubHeadline */
     font-family: Helvetica;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
 }
@@ -276,7 +267,6 @@ body {
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 160%;
 }
@@ -290,7 +280,6 @@ body {
     text-align: center;
     font-family: Helvetica;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
 }
@@ -302,7 +291,6 @@ body {
     text-align: center;
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 160%;
 }
@@ -325,7 +313,6 @@ body {
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 160%;
     max-width: 220px;
@@ -352,7 +339,6 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 900;
     line-height: 160%;
     letter-spacing: 0.08px;
@@ -389,7 +375,6 @@ body {
     color: #FFF;
     font-family: Helvetica;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     margin-bottom: 28px;
@@ -411,7 +396,6 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 900;
     line-height: 160%;
     letter-spacing: 0.09px;
@@ -422,7 +406,6 @@ body {
     color: var(--3, #9C69E2);
     font-family: Avenir;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 160%;
     letter-spacing: 0.14px;
@@ -433,7 +416,6 @@ body {
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 180%;
     max-width: 430px;
@@ -503,7 +485,6 @@ body {
     text-align: center;
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
     line-height: 160%;
 }
@@ -512,7 +493,6 @@ body {
     color: #212353;
     font-family: Helvetica;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     margin-bottom: 20px;
@@ -522,7 +502,6 @@ body {
     color: var(--1, #4B5D68);
     font-family: Avenir;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 160%;
 }
@@ -531,7 +510,6 @@ body {
 .data {
     padding: 153px 0 93px;
     display: flex;
-
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -553,7 +531,6 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 20px;
-    font-style: normal;
     font-weight: 900;
     line-height: 160%;
     padding-bottom: 30px;
@@ -567,8 +544,7 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 180%;
     letter-spacing: 0.16px;
     max-width: 255px;
@@ -578,7 +554,6 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 180%;
     letter-spacing: 0.16px;
@@ -589,16 +564,18 @@ body {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 250%;
+}
+
+.social_data {
+    padding-right: 35px;
 }
 
 .copyright {
     color: var(--2, #212353);
     font-family: Avenir;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 180%;
     letter-spacing: 0.12px;
@@ -614,5 +591,5 @@ body {
 }
 
 .copyright_text div {
-    max-width: 240px;
+    width: 260px;
 }
