@@ -39,8 +39,9 @@ ul {
 /* ================ */
 
 body {
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Playfair Display', serif;
+
+    font-family: 'Mulish', sans-serif, 'Playfair Display', serif, 'Rochester', cursive;
+
 }
 
 .wrapper {
@@ -65,15 +66,23 @@ body {
 }
 
 .header_container {
-
     display: grid;
-    grid-template: 1fr / 1fr minmax(auto, 540px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 560px) 1fr;
+    row-gap: 16px;
 }
 
-.logo {}
+.logo {
+    color: var(--black, #1B2437);
+    font-family: Rochester;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
 
 .social_header {
     justify-self: center;
+    align-self: center;
 }
 
 .social_header a {
@@ -96,6 +105,17 @@ body {
     grid-row: 2;
     grid-column: 2;
     justify-self: center;
+    margin: 24px 0px 18px 0px;
+}
+
+.nav a {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 }
 
 .nav li {
@@ -109,9 +129,26 @@ body {
 
 .hero {
     padding-top: 103px;
-    padding-bottom: 118px;
+    padding-bottom: 80px;
     width: 100%;
     background: url("../homework07/img/pictures/hero.png"), lightgray 50% / cover no-repeat;
+}
+
+.hero a {
+    width: 255px;
+    height: 77px;
+    border-radius: 15px;
+    background: var(--black, #1B2437);
+    color: var(--white, #FFF);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .hero h1 {
@@ -121,6 +158,17 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 67px;
+    width: 361px;
+}
+
+.hero p {
+    color: var(--white, #FFF);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 446px;
+    margin-bottom: 34px;
 }
 
 
