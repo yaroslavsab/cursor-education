@@ -70,9 +70,7 @@ body {
     grid-template: 1fr / 1fr minmax(auto, 540px) 1fr;
 }
 
-.logo {
-    grid-column: ;
-}
+.logo {}
 
 .social_header {
     justify-self: center;
