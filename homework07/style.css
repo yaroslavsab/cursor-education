@@ -127,6 +127,12 @@ body {
     margin-right: 0;
 }
 
+/*=================================*/
+
+.main {
+    grid-area: "main";
+}
+
 .hero {
     padding-top: 103px;
     padding-bottom: 80px;
@@ -171,11 +177,123 @@ body {
     margin-bottom: 34px;
 }
 
+.colection {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 440px 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item1 item4 item4"
+        "item5 item5 item5"
+    ;
+    margin-top: 70px;
+}
 
 
+.colection_item1 {
+    grid-area: item1;
+    height: 458px;
+    border-radius: 16px;
+    background: url("../homework07/img/pictures/women_collection_category.png"), lightgray 50% / cover no-repeat;
+    padding: 268px 150px 32px 32px;
+}
 
-.main {
-    grid-area: "main";
+.colection_item1 h3 {
+    color: var(--white, #FFF);
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px;
+    width: 200px;
+}
+
+.colection_item1 a {
+    border-radius: 8px;
+    background: lightgray;
+    width: 93px;
+    height: 30px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+.colection_item1 p {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.colection_item2 {
+    grid-area: item2;
+    border-radius: 16px;
+    background: #EFEFF4;
+    padding: 52px 22px;
+}
+
+.colection_item2 h3 {
+    color: var(--black, #1B2437);
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px;
+}
+
+.colection_item2 p {
+    color: var(--black, #1B2437);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.colection_item3 {
+    grid-area: item3;
+    border-radius: 16px;
+    background: url("../homework07/img/pictures/dresses_category.png"), lightgray 50% / cover no-repeat;
+    padding: 53px 144px 97px 39px;
+}
+
+.colection_item4 {
+    grid-area: item4;
+    height: 204px;
+    border-radius: 16px;
+    background: url("../homework07/img/pictures/denim_jackets_category.png"), lightgray 50% / cover no-repeat;
+    padding: 64px 332px 65px 22px;
+}
+
+.colection_item4 p {
+    color: var(--black, #1B2437);
+    font-family: Mulish;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.colection_item4 h3 {
+    color: var(--black, #1B2437);
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 45px;
+}
+
+
+.colection_item5 {
+    grid-area: item5;
+    border-radius: 16px;
+    background: var(--white, #FFF);
 }
 
 .footer {
