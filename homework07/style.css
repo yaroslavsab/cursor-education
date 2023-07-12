@@ -11,7 +11,6 @@ html,
 body {
     height: 100%;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #fff;
     font-size: 16px;
     line-height: 24px;
 }
@@ -317,6 +316,11 @@ body {
     line-height: 30px;
 }
 
+.like {
+    margin: 70px 0px;
+
+}
+
 
 .like h2 {
     color: var(--black, #1B2437);
@@ -329,7 +333,7 @@ body {
 
 .like_items {
     display: grid;
-    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -345,7 +349,7 @@ body {
     font-size: 18px;
     font-weight: 900;
     line-height: 30px;
-    margin: 16px 0px 8px 24px;
+    margin: 16px 0px 12px 24px;
 }
 
 .like_item p {
@@ -366,10 +370,21 @@ body {
 
 .shop button {
     border-radius: 15px;
-    background: var(--pink, #EDA3B5);
+    background-color: #1B2437;
     width: 153px;
     height: 58px;
     cursor: pointer;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.shop .pink_button {
+    background-color: #EDA3B5;
 }
 
 .price {
@@ -380,6 +395,37 @@ body {
     font-weight: 700;
     line-height: 30px;
     align-self: center;
+}
+
+.contact h2 {
+    color: var(--black, #1B2437);
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+}
+
+.map_container {
+    border-radius: 16px;
+    background: var(--white, #FFF);
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0px;
+}
+
+.contact_item p {
+    margin-top: 16px;
 }
 
 .footer {
