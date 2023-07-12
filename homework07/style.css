@@ -292,10 +292,97 @@ body {
 
 .colection_item5 {
     grid-area: item5;
+    background: var(--white, #FFF);
     border-radius: 16px;
     background: var(--white, #FFF);
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-self: baseline;
+}
+
+.col p {
+    color: #000;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+.like h2 {
+    color: var(--black, #1B2437);
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 67px;
+}
+
+.like_items {
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    gap: 30px;
+}
+
+.like_item {
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    box-shadow: 2px 5px 45px 0px rgba(237, 163, 181, 0.25);
+}
+
+.like_item h4 {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 16px 0px 8px 24px;
+}
+
+.like_item p {
+    color: #000;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 24px;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    margin: 27px 18px 18px 24px;
+}
+
+.shop button {
+    border-radius: 15px;
+    background: var(--pink, #EDA3B5);
+    width: 153px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.price {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    align-self: center;
 }
 
 .footer {
     grid-area: "footer";
+    justify-content: space-around;
 }
