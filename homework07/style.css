@@ -418,12 +418,14 @@ body {
 .map_container {
     border-radius: 16px;
     background: var(--white, #FFF);
+    padding: 12px 12px 0 12px;
 }
 
 .contact_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .contact_item {
@@ -442,7 +444,7 @@ body {
 
 .footer {
     grid-area: footer;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .footer_head {
