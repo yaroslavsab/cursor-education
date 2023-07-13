@@ -299,7 +299,7 @@ body {
     grid-auto-flow: column;
     justify-items: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .col {
@@ -343,6 +343,14 @@ body {
     border-radius: 16px;
     background: var(--white, #FFF);
     box-shadow: 2px 5px 45px 0px rgba(237, 163, 181, 0.25);
+    position: relative;
+}
+
+.ballon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
 }
 
 .like_item h4 {
