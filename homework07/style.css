@@ -429,6 +429,12 @@ body {
 }
 
 .footer {
-    grid-area: "footer";
-    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 100px;
+}
+
+.footer_head {
+    display: grid;
+    grid-template: 1fr/ repeat(4, 1fr);
+    justify-items: center;
 }
