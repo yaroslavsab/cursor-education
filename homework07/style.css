@@ -112,11 +112,36 @@ body {
     color: #000;
     font-family: Playfair Display;
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 }
+
+.nav a:before {
+    content: "";
+    background: #EDA3B5;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #EDA3B5;
+
+}
+
+.nav a:hover::before {
+    align-items: center;
+    width: 50%;
+    left: 20%;
+}
+
 
 .nav li {
     display: inline-block;
