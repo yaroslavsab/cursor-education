@@ -49,6 +49,7 @@ ul {
     height: 50px;
     border: 1px solid red;
     margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .wrapper div:nth-child(1n+21) {
@@ -72,6 +73,7 @@ button {
     margin: 300px;
     cursor: pointer;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button::before {
