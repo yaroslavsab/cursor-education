@@ -70,15 +70,10 @@ button {
     height: 92px;
     border-radius: 50px;
     background-color: #44D3A8;
-    ;
     margin: 300px;
     cursor: pointer;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-button::before {
-    left: -232px;
 }
 
 button::before,
@@ -91,6 +86,10 @@ button::after {
     position: absolute;
     height: 12px;
     cursor: auto;
+}
+
+button::before {
+    left: -232px;
 }
 
 button::after {
