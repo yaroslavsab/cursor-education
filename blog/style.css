@@ -10,7 +10,7 @@
 html,
 body {
     height: 100%;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", 'Open Sans', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -52,7 +52,7 @@ ul {
 }
 
 .header {
-    background: url("../blog/img/head.png");
+    background: url("../blog/img/Background.png") right top/ cover no-repeat;
 }
 
 .header_nav {
@@ -75,6 +75,106 @@ ul {
     font-weight: 600;
 }
 
+.list a:hover {
+    border: 2px solid #FFF;
+    border-radius: 5px;
+}
+
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    /* 125% */
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.form {
+    text-align: center;
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+
+}
+
+.tags {
+    text-align: center;
+}
+
+.search_input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    background: var(--fill-white-white, #FFF);
+    margin: 0 5px;
+    padding-left: 6%;
+    margin-bottom: 23px;
+}
+
+.search_input::placeholder {
+    color: #959EAD;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.search_button {
+    width: 94px;
+    height: 40px;
+    background-color: #1565D8;
+    border-radius: 5px;
+    position: absolute;
+    top: 8px;
+    right: 2%;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search_img {
+    position: absolute;
+    top: 20px;
+    left: 3%;
+}
+
+.tags {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 150px;
+}
+
+.tags h3 {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tags a {
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
 
 .main {
     flex: 1 1 auto;
