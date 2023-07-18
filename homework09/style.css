@@ -160,6 +160,10 @@ body {
     z-index: -1;
 }
 
+.head_button a {
+    margin-right: 15px;
+}
+
 
 
 
