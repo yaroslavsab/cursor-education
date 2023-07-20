@@ -378,6 +378,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 15px 13px 18px 17px;
+    gap: 11px;
 
 }
 
@@ -385,6 +386,7 @@ body {
     color: var(--333333, #333);
     font-family: Lato;
     font-weight: 700;
+    flex: 1 1 auto;
 }
 
 .user_item p {
@@ -399,4 +401,107 @@ body {
 .dots {
     text-align: center;
     margin: 47px 0 44px 0;
+}
+
+.featured h2 {
+    color: var(--333333, #333);
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.32;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.featured_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured_items div {
+    cursor: pointer;
+}
+
+.sportTv {
+    display: flex;
+    align-items: center;
+}
+
+.sportTv p {
+    color: #000;
+    font-family: Product Sans;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 0%;
+}
+
+.five {
+    padding-bottom: 68px;
+}
+
+.six {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.six_right h3 {
+    color: var(--333333, #333);
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.32;
+    margin: 105px 0 35px 0;
+}
+
+.six_right p {
+    color: var(--4-f-4-f-4-f, #4F4F4F);
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 1.56;
+    margin-bottom: 38px;
+    width: 535px;
+}
+
+.footer {
+    background: var(--brand-colour, #00ADEE);
+}
+
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.sport {
+    display: flex;
+    align-items: center;
+}
+
+.sport p {
+    color: #FFF;
+    font-family: Product Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+}
+
+.menu_items {
+    display: flex;
+    gap: 37px;
+}
+
+.menu_items a {
+    color: var(--ffffff, #FFF);
+    font-family: Lato;
+    font-weight: 700;
+    line-height: 1.32;
+}
+
+.social {
+    display: flex;
+    gap: 17px;
 }
