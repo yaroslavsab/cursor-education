@@ -164,9 +164,36 @@ body {
     margin-right: 15px;
 }
 
-@media (max-width: 720px) {
+@media(max-width: 721px) {
     .head_img {
         display: none;
+    }
+
+    .container {
+        max-width: none;
+        padding: 10px;
+    }
+
+    .head_items {
+        justify-content: center;
+    }
+
+    .head_text h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .head_text p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .head_button {
+        text-align: center;
+    }
+
+    .header {
+        padding-bottom: 50px;
     }
 }
 
