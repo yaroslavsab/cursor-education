@@ -164,6 +164,12 @@ body {
     margin-right: 15px;
 }
 
+@media (max-width: 720px) {
+    .head_img {
+        display: none;
+    }
+}
+
 .first_section {
     margin-top: 109px;
     background: url("../homework09/img/sect1_bg.png") bottom left no-repeat;
