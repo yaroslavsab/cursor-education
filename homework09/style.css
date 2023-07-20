@@ -304,3 +304,99 @@ body {
 .main {
     flex: 1 1 auto;
 }
+
+.third {
+    background: url("../homework09/img/blue_bg.png") center no-repeat;
+}
+
+.features_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.features_items div {
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.features_items svg {
+    margin-bottom: 10px;
+}
+
+.features_items p {
+    color: var(--ffffff, #FFF);
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 1.44;
+}
+
+.third_section h2 {
+    text-align: center;
+    color: var(--ffffff, #FFF);
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.32;
+    margin-top: 76px;
+    margin-bottom: 50px;
+}
+
+.fourth {
+    padding: 40px 0;
+}
+
+.users h2 {
+    color: var(--333333, #333);
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.32;
+    text-align: center;
+    margin-bottom: 63px;
+}
+
+.users_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.user_item {
+    border-radius: 4px;
+    border: 1px solid var(--828282, #828282);
+    background: #FFF;
+    width: 309px;
+    height: 161px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 13px 18px 17px;
+
+}
+
+.user_info h4 {
+    color: var(--333333, #333);
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.user_item p {
+    color: var(--4-f-4-f-4-f, #4F4F4F);
+    font-family: Lato;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.32;
+    margin: 0 13px 24px 17px;
+}
+
+.dots {
+    text-align: center;
+    margin: 47px 0 44px 0;
+}
