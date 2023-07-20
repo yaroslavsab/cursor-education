@@ -101,6 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    max-width: 1440px;
 }
 
 .header {
@@ -157,7 +158,6 @@ body {
     position: absolute;
     top: 0;
     right: -290px;
-    z-index: -1;
 }
 
 .head_button a {
@@ -165,8 +165,12 @@ body {
 }
 
 .first_section {
-    padding-top: 109px;
-    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.50), url("../homework09/img/sect1_bg.png") 50% no-repeat;
+    margin-top: 109px;
+    background: url("../homework09/img/sect1_bg.png") bottom left no-repeat;
+}
+
+.first_bg {
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.50);
 }
 
 .first {
@@ -174,6 +178,7 @@ body {
     justify-content: space-between;
     gap: 15%;
     position: relative;
+    padding-top: 109px;
 }
 
 .items_notificstion {
@@ -182,6 +187,8 @@ body {
 }
 
 .notification {
+    position: relative;
+    z-index: 2;
     width: 360px;
     border-radius: 4px;
     background: #FFF;
@@ -237,9 +244,9 @@ body {
 
 .video img {
     position: absolute;
-    top: 165px;
+    top: 260px;
     left: 106px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .what {
@@ -247,8 +254,6 @@ body {
     font-family: Lato;
     font-weight: 700;
     line-height: 1.32;
-    margin-bottom: 27px;
-
 }
 
 .head_section {
@@ -257,7 +262,6 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.32;
-    margin-bottom: 27px;
 }
 
 .paragraph {
@@ -275,6 +279,10 @@ body {
     line-height: 1.32;
 }
 
+.second_text {
+    padding: 200px 100px 0 0;
+}
+
 .second_items {
     display: flex;
     gap: 90px;
@@ -284,6 +292,7 @@ body {
 
 .second_phone {
     position: relative;
+    margin: 100px 0;
 }
 
 .phone_bot {
