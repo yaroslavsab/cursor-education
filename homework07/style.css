@@ -70,8 +70,7 @@ body {
     row-gap: 16px;
 }
 
-.logo,
-.footer .logo {
+.logo {
     color: var(--black, #1B2437);
     font-family: Rochester;
     font-size: 32px;
