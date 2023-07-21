@@ -326,6 +326,44 @@ body {
     gap: 90px;
 }
 
+@media(max-width: 721px) {
+    .first {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .what {
+        text-align: center;
+    }
+
+    .head_section {
+        text-align: center;
+    }
+
+    .paragraph {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .anchor {
+        display: block;
+        text-align: center;
+    }
+
+    .video_img {
+        top: 430px;
+    }
+
+    .notification {
+        margin-top: 13rem;
+    }
+
+    .video_img {
+        top: 42rem;
+    }
+
+}
+
 
 .second_phone {
     position: relative;
@@ -413,15 +451,28 @@ body {
     flex: 1 1 auto;
 }
 
+@media(max-width: 721px) {
+    .second_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .second_text {
+        padding: 20px 10px;
+    }
+}
+
+
 .third {
-    background: url("../homework09/img/blue_bg.png") center no-repeat;
+    background: url("../homework09/img/blue_bg.png") center top no-repeat;
 }
 
 .features_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10%;
+    gap: 1rem;
+    padding: 0 15px;
 }
 
 .features_item {
@@ -431,6 +482,7 @@ body {
 
 .features_item_svg {
     margin-bottom: 10px;
+    fill: #FFF;
 }
 
 .features_item_text {
@@ -447,8 +499,31 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.32;
-    margin-top: 76px;
+    margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media(max-width: 721px) {
+    .third {
+        background: none;
+    }
+
+    .third_section_title {
+        color: var(--333333, #333);
+    }
+
+    .features_item_text {
+        color: #4F4F4F;
+    }
+
+    .features_item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features_item_svg {
+        fill: #00ADEE;
+    }
 }
 
 .fourth {
@@ -511,6 +586,33 @@ body {
     margin: 47px 0 44px 0;
 }
 
+@media(max-width: 721px) {
+    .user_item:nth-child(odd) {
+        display: none;
+    }
+
+    .footer_items {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .sport {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .menu_items {
+        align-self: flex-start;
+        order: 3;
+    }
+
+    .social {
+        align-self: flex-start;
+        order: 2;
+    }
+}
+
 .featured_title {
     color: var(--333333, #333);
     font-family: Lato;
@@ -525,6 +627,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .featured_item {
@@ -553,6 +657,9 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 70px;
+    flex-wrap: wrap-reverse;
+    padding: 5px;
+
 }
 
 .six_right_title {
@@ -612,4 +719,12 @@ body {
 .social {
     display: flex;
     gap: 17px;
+}
+
+@media(max-width: 721px) {
+    .six {
+        text-align: center;
+        gap: 0;
+        padding: 0 10px;
+    }
 }
