@@ -84,11 +84,11 @@ body {
     align-self: center;
 }
 
-.social_header a {
+.social_header_link {
     margin-right: 40px;
 }
 
-.social_header a:last-child {
+.social_header_link:last-child {
     margin-right: 0;
 }
 
@@ -96,7 +96,7 @@ body {
     justify-self: end;
 }
 
-.user_action a {
+.user_action_link {
     margin-left: 30px;
 }
 
@@ -107,7 +107,7 @@ body {
     margin: 24px 0px 18px 0px;
 }
 
-.nav a {
+.nav_link {
     color: #000;
     font-family: Playfair Display;
     font-size: 28px;
@@ -118,7 +118,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.nav a:before {
+.nav_link:before {
     content: "";
     background: #EDA3B5;
     display: block;
@@ -130,24 +130,24 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.nav a:hover {
+.nav_link:hover {
     color: #EDA3B5;
 
 }
 
-.nav a:hover::before {
+.nav_link:hover::before {
     align-items: center;
     width: 50%;
     left: 20%;
 }
 
 
-.nav li {
+.nav_item {
     display: inline-block;
     margin-right: 80px;
 }
 
-.nav li:last-child {
+.nav_item:last-child {
     margin-right: 0;
 }
 
@@ -166,7 +166,7 @@ body {
     background-position: 50%;
 }
 
-.hero a {
+.hero_link {
     width: 255px;
     height: 77px;
     border-radius: 15px;
@@ -182,7 +182,7 @@ body {
     text-decoration: none;
 }
 
-.hero h1 {
+.hero_title {
     color: #FFF;
     font-family: Playfair Display;
     font-size: 48px;
@@ -191,7 +191,7 @@ body {
     width: 361px;
 }
 
-.hero p {
+.hero_text {
     color: var(--white, #FFF);
     font-family: Mulish;
     font-size: 18px;
@@ -222,7 +222,7 @@ body {
     padding: 268px 150px 32px 32px;
 }
 
-.colection_item1 h3 {
+.colection_item1_title {
     color: var(--white, #FFF);
     font-family: Playfair Display;
     font-size: 32px;
@@ -231,7 +231,7 @@ body {
     width: 200px;
 }
 
-.colection_item1 a {
+.colection_item1_link {
     border-radius: 8px;
     background: lightgray;
     width: 93px;
@@ -249,7 +249,7 @@ body {
     margin-top: 8px;
 }
 
-.colection_item1 p {
+.colection_item1_text {
     color: #FFF;
     font-family: Mulish;
     font-size: 16px;
@@ -264,7 +264,7 @@ body {
     padding: 52px 22px;
 }
 
-.colection_item2 h3 {
+.colection_item2_title {
     color: var(--black, #1B2437);
     font-family: Playfair Display;
     font-size: 32px;
@@ -272,7 +272,7 @@ body {
     line-height: 45px;
 }
 
-.colection_item2 p {
+.colection_item2_text {
     color: var(--black, #1B2437);
     font-family: Mulish;
     font-size: 16px;
@@ -295,14 +295,14 @@ body {
     padding: 64px 332px 65px 22px;
 }
 
-.colection_item4 p {
+.colection_item4_text {
     color: var(--black, #1B2437);
     font-family: Mulish;
     font-weight: 400;
     line-height: 30px;
 }
 
-.colection_item4 h3 {
+.colection_item4_title {
     color: var(--black, #1B2437);
     font-family: Playfair Display;
     font-size: 32px;
@@ -329,7 +329,7 @@ body {
     align-self: baseline;
 }
 
-.col p {
+.col_text {
     color: #000;
     font-family: Mulish;
     font-size: 18px;
@@ -344,7 +344,7 @@ body {
 }
 
 
-.like h2 {
+.like_title {
     color: var(--black, #1B2437);
     font-family: Playfair Display;
     font-size: 48px;
@@ -370,10 +370,9 @@ body {
     position: absolute;
     top: 16px;
     right: 16px;
-
 }
 
-.like_item h4 {
+.like_item_title {
     color: #000;
     font-family: Playfair Display;
     font-size: 18px;
@@ -382,7 +381,7 @@ body {
     margin: 16px 0px 12px 24px;
 }
 
-.like_item p {
+.like_item_text {
     color: #000;
     font-family: Mulish;
     font-weight: 700;
@@ -423,7 +422,7 @@ body {
     align-self: center;
 }
 
-.contact h2 {
+.contact_title {
     color: var(--black, #1B2437);
     font-family: Playfair Display;
     font-size: 48px;
@@ -452,7 +451,7 @@ body {
     margin: 24px 0px;
 }
 
-.contact_item p {
+.contact_item_p {
     margin-top: 16px;
     width: 255px;
     text-align: center;
@@ -471,7 +470,7 @@ body {
     justify-content: space-between;
 }
 
-.footer_head h4 {
+.footer_head_item_title {
     margin-bottom: 22px;
     color: #000;
     font-family: Playfair Display;
@@ -481,7 +480,7 @@ body {
 
 }
 
-.footer_head p {
+.logo_text {
     color: #5C5C5C;
     font-family: Playfair Display;
     font-size: 16px;
@@ -489,7 +488,7 @@ body {
     line-height: 30px;
 }
 
-.footer_head li {
+.footer_li_item {
     color: var(--gray-6, #8E8E93);
     font-family: Mulish;
     font-size: 16px;
@@ -498,7 +497,7 @@ body {
     padding-bottom: 22px;
 }
 
-.footer_head a {
+.footer_head_item_link {
     text-decoration: none;
 }
 
