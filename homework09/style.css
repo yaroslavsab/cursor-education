@@ -124,7 +124,7 @@ body {
     margin: 3rem 0 8rem 0;
 }
 
-.head_items h2 {
+.head_items_title {
     color: #5282F0;
     font-family: Product Sans;
     font-size: 1.5rem;
@@ -133,7 +133,7 @@ body {
 }
 
 
-.head_text h1 {
+.head_text_title {
     width: 60%;
     color: var(--333333, #333);
     font-family: Lato;
@@ -144,7 +144,7 @@ body {
     margin-bottom: 30px;
 }
 
-.head_text p {
+.head_text_text {
     color: var(--4-f-4-f-4-f, #4F4F4F);
     font-family: Lato;
     font-size: 1.25rem;
@@ -160,7 +160,7 @@ body {
     right: -290px;
 }
 
-.head_button a {
+.head_button_a {
     margin-right: 15px;
 }
 
@@ -178,12 +178,12 @@ body {
         justify-content: center;
     }
 
-    .head_text h1 {
+    .head_text_title {
         text-align: center;
         width: 100%;
     }
 
-    .head_text p {
+    .head_text_text {
         text-align: center;
         width: 100%;
     }
@@ -234,13 +234,13 @@ body {
     position: relative;
 }
 
-.icons_notification img {
+.icons_notification_img {
     position: absolute;
     top: 0;
     right: -72px;
 }
 
-.text_notification p {
+.text_notification_time {
     color: #4F4F4F;
     font-family: Lato;
     font-weight: 700;
@@ -248,7 +248,7 @@ body {
     margin-bottom: 12px;
 }
 
-.text_notification h3 {
+.text_notification_title {
     color: #000;
     font-family: Lato;
     font-size: 1.25rem;
@@ -259,7 +259,7 @@ body {
 
 }
 
-.text_notification div {
+.text_notification_text {
     color: #000;
     font-family: Lato;
     font-weight: 400;
@@ -271,11 +271,11 @@ body {
     margin: 10px;
 }
 
-.turn_notification label {
+.turn_notification_label {
     margin-right: 33px;
 }
 
-.video img {
+.video_img {
     position: absolute;
     top: 260px;
     left: 106px;
@@ -319,7 +319,6 @@ body {
 .second_items {
     display: flex;
     gap: 90px;
-
 }
 
 
@@ -358,23 +357,23 @@ body {
     gap: 10%;
 }
 
-.features_items div {
+.features_item {
     width: 25%;
     margin-bottom: 30px;
 }
 
-.features_items svg {
+.features_item_svg {
     margin-bottom: 10px;
 }
 
-.features_items p {
+.features_item_text {
     color: var(--ffffff, #FFF);
     font-family: Lato;
     font-weight: 400;
     line-height: 1.44;
 }
 
-.third_section h2 {
+.third_section_title {
     text-align: center;
     color: var(--ffffff, #FFF);
     font-family: Lato;
@@ -389,7 +388,7 @@ body {
     padding: 40px 0;
 }
 
-.users h2 {
+.uusers_title {
     color: var(--333333, #333);
     font-family: Lato;
     font-size: 1.6rem;
@@ -424,14 +423,14 @@ body {
 
 }
 
-.user_info h4 {
+.user_info_title {
     color: var(--333333, #333);
     font-family: Lato;
     font-weight: 700;
     flex: 1 1 auto;
 }
 
-.user_item p {
+.user_item_text {
     color: var(--4-f-4-f-4-f, #4F4F4F);
     font-family: Lato;
     font-size: 0.875rem;
@@ -445,7 +444,7 @@ body {
     margin: 47px 0 44px 0;
 }
 
-.featured h2 {
+.featured_title {
     color: var(--333333, #333);
     font-family: Lato;
     font-size: 1.6rem;
@@ -461,7 +460,7 @@ body {
     align-items: center;
 }
 
-.featured_items div {
+.featured_item {
     cursor: pointer;
 }
 
@@ -470,7 +469,7 @@ body {
     align-items: center;
 }
 
-.sportTv p {
+.sportTv_text {
     color: #000;
     font-family: Product Sans;
     font-size: 36px;
@@ -489,7 +488,7 @@ body {
     gap: 70px;
 }
 
-.six_right h3 {
+.six_right_title {
     color: var(--333333, #333);
     font-family: Lato;
     font-size: 1.6rem;
@@ -498,7 +497,7 @@ body {
     margin: 105px 0 35px 0;
 }
 
-.six_right p {
+.six_right_text {
     color: var(--4-f-4-f-4-f, #4F4F4F);
     font-family: Lato;
     font-weight: 400;
@@ -523,7 +522,7 @@ body {
     align-items: center;
 }
 
-.sport p {
+.sport_text {
     color: #FFF;
     font-family: Product Sans;
     font-size: 1.5rem;
@@ -536,7 +535,7 @@ body {
     gap: 37px;
 }
 
-.menu_items a {
+.menu_items_link {
     color: var(--ffffff, #FFF);
     font-family: Lato;
     font-weight: 700;
