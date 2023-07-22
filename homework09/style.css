@@ -195,6 +195,11 @@ body {
         text-align: center;
     }
 
+    .head_button_a_img {
+        margin-bottom: 1rem;
+    }
+
+
     .header {
         padding-bottom: 50px;
     }
@@ -385,6 +390,10 @@ body {
     justify-content: center;
 }
 
+.phone_bot_cart {
+    display: none;
+}
+
 .phone_message {
     position: absolute;
     top: 82px;
@@ -460,6 +469,34 @@ body {
     .second_text {
         padding: 20px 10px;
     }
+
+    .phone_bot_svg {
+        display: none;
+    }
+
+    .phone_bot_cart {
+        display: block;
+    }
+
+    .phone_bot::after {
+        content: "7";
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        z-index: 5;
+        width: 22.663px;
+        height: 22.728px;
+        background-color: #40B756;
+        border-radius: 50%;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 15.062px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -611,6 +648,10 @@ body {
         align-self: flex-start;
         order: 2;
     }
+
+    .users_items {
+        gap: 1rem;
+    }
 }
 
 .featured_title {
@@ -727,4 +768,10 @@ body {
         gap: 0;
         padding: 0 10px;
     }
+
+    .six_right_text {
+        padding: 0 2rem;
+        width: 100%;
+    }
+
 }
