@@ -108,7 +108,7 @@ body {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding-bottom: 164px;
+    padding-bottom: 13rem;
 }
 
 .container {
@@ -141,7 +141,7 @@ body {
     font-weight: 700;
     line-height: 1.32;
     letter-spacing: 1.08px;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .head_text_text {
@@ -151,18 +151,18 @@ body {
     font-weight: 400;
     line-height: 1.44;
     width: 45%;
-    margin-bottom: 50px;
+    margin-bottom: 3.2rem;
 }
 
 .head_img {
     position: absolute;
     top: 0;
-    right: -290px;
+    right: -18rem;
     z-index: -1;
 }
 
 .head_button_a {
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 
@@ -174,7 +174,7 @@ body {
 
     .container {
         max-width: none;
-        padding: 10px;
+        padding: 0.6rem;
     }
 
     .head_items {
@@ -201,12 +201,12 @@ body {
 
 
     .header {
-        padding-bottom: 50px;
+        padding-bottom: 3rem;
     }
 }
 
 .first_section {
-    margin-top: 109px;
+    margin-top: 7rem;
     background: url("../homework09/img/sect1_bg.png") bottom left no-repeat;
 }
 
@@ -219,12 +219,12 @@ body {
     justify-content: space-between;
     gap: 15%;
     position: relative;
-    padding-top: 109px;
+    padding-top: 7rem;
 }
 
 .items_notificstion {
     display: flex;
-    gap: 73px;
+    gap: 5rem;
 }
 
 .notification {
@@ -696,7 +696,7 @@ body {
 
 .six {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 70px;
     flex-wrap: wrap-reverse;
     padding: 5px;
@@ -767,6 +767,7 @@ body {
         text-align: center;
         gap: 0;
         padding: 0 10px;
+
     }
 
     .six_right_text {
