@@ -703,6 +703,10 @@ body {
 
 }
 
+.six_img {
+    max-width: 666px;
+}
+
 .six_right_title {
     color: var(--333333, #333);
     font-family: Lato;
