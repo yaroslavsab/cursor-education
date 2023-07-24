@@ -157,7 +157,9 @@ body {
         bottom: 20%;
     }
 
-    100% {}
+    100% {
+        left: 20px;
+    }
 }
 
 @keyframes moving {
