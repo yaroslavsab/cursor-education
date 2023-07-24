@@ -184,7 +184,7 @@ body {
 
 .nuton {
     height: 400px;
-    width: 80%;
+    width: 800px;
     margin-top: 50px;
     background-color: aquamarine;
     position: relative;
@@ -206,26 +206,58 @@ body {
 
 .nuton div:nth-child(1) {
     position: absolute;
-    left: 190px;
-    animation: left 3s ease-in infinite;
+    left: 224px;
+    animation: left 3s infinite;
+    animation-delay: 3s;
 }
 
 @keyframes left {
     0% {
-        left: 190px;
+        left: 224px;
     }
 
-    50% {
+    25% {
         left: 0px;
     }
 
+    50% {
+        left: 224px;
+    }
+
     75% {
-        left: 190px;
+        left: 224px;
+    }
+
+    100% {
+        left: 224px;
     }
 }
 
 .nuton div:last-child {
     position: absolute;
-    right: 215px;
-    animation: right 3s ease-in infinite;
+    right: 223px;
+    animation: right 3s infinite;
+
+}
+
+@keyframes right {
+    0% {
+        right: 223px;
+    }
+
+    25% {
+        right: 223px;
+    }
+
+    50% {
+        right: 223px;
+    }
+
+    75% {
+        right: 0px;
+    }
+
+    100% {
+        right: 223px;
+    }
 }
