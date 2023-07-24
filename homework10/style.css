@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*======================*/
+
+body {
+    min-height: 100vh;
+
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding: 100px;
+    position: relative;
+}
+
+.sword {
+    background-color: blueviolet;
+    position: absolute;
+    height: 90px;
+    width: 10px;
+    right: 10px;
+    bottom: 30px;
+    animation: moving 4s infinite;
+}
+
+.sword2 {
+    position: absolute;
+    bottom: 30px;
+    background-color: rgb(41, 138, 57);
+    height: 90px;
+    width: 10px;
+    animation: moving2 4s infinite;
+}
+
+
+.yoda div {
+    margin: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid red;
+
+}
+
+.yoda {
+    width: 70%;
+    height: 300px;
+    background-color: rgb(56, 42, 68);
+    position: relative;
+    padding: 5px;
+
+}
+
+@keyframes moving2 {
+    0% {
+        left: 20px;
+    }
+
+    25% {
+
+        transform: rotate(35deg);
+    }
+
+    50% {
+        left: 50%;
+
+    }
+
+    75% {
+        bottom: 20%;
+    }
+
+    100% {}
+}
+
+@keyframes moving {
+    0% {
+        right: 20px;
+    }
+
+    25% {
+        right: 25%;
+    }
+
+    50% {
+        right: 46%;
+        transform: rotate(-50deg);
+    }
+
+    55% {
+        bottom: 20%;
+    }
+
+    100% {}
+}
+
+
+.nuton {
+    height: 400px;
+    width: 80%;
+    margin-top: 50px;
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.nuton div {
+    height: 50px;
+    width: 50px;
+    background: rgb(68, 151, 179);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+
+}
+
+.nuton div:nth-child(1) {
+    position: absolute;
+    left: 190px;
+    animation: left 3s ease-in infinite;
+}
+
+@keyframes left {
+    0% {
+        left: 190px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    75% {
+        left: 190px;
+    }
+}
+
+.nuton div:last-child {
+    position: absolute;
+    right: 215px;
+    animation: right 3s ease-in infinite;
+}
