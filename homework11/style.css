@@ -1,3 +1,7 @@
+.header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+
 .form .fa-search {
     position: absolute;
     top: 20px;
@@ -33,4 +37,14 @@
 
 .left-pan i {
     padding-left: 10px;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    width: 97px;
+    height: 29px;
+    text-align: center;
 }
