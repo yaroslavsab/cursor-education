@@ -286,7 +286,7 @@ body {
 .video_img {
     position: absolute;
     top: 260px;
-    left: 106px;
+    left: 6.6rem;
     z-index: 1;
 }
 
@@ -355,9 +355,6 @@ body {
         text-align: center;
     }
 
-    .video_img {
-        top: 430px;
-    }
 
     .notification {
         margin-top: 13rem;
@@ -365,6 +362,7 @@ body {
 
     .video_img {
         top: 42rem;
+        left: 2.6rem;
     }
 
 }
@@ -586,6 +584,41 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+}
+
+.users_items::after {
+    content: "<";
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    height: 47px;
+    width: 47px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #00ADEE;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ADEE;
+}
+
+.users_items::before {
+    content: ">";
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    height: 47px;
+    width: 47px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #00ADEE;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ADEE;
 }
 
 
@@ -656,6 +689,11 @@ body {
     .users_items {
         gap: 1rem;
     }
+
+    .users_items::after {
+        display: none;
+    }
+
 }
 
 .featured_title {
@@ -737,7 +775,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 10px;
 }
 
 .sport {
@@ -755,7 +793,7 @@ body {
 
 .menu_items {
     display: flex;
-    gap: 37px;
+    gap: 2rem;
 }
 
 .menu_items_link {
@@ -781,6 +819,10 @@ body {
     .six_right_text {
         padding: 0 2rem;
         width: 100%;
+    }
+
+    .social {
+        padding: 2rem 0;
     }
 
 }
