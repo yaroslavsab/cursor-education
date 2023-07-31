@@ -94,3 +94,19 @@
     letter-spacing: 1.08px;
     text-decoration: none;
 }
+
+.messages::after {
+    content: "5";
+    position: absolute;
+    top: -4px;
+    right: 18px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+}
