@@ -66,3 +66,31 @@
     font-weight: 500;
     font-size: 17px;
 }
+
+.img {
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts {
+    color: #262626;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.08;
+    text-decoration: none;
+}
+
+.tagged {
+    color: #8F8F8F;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-decoration: none;
+}
