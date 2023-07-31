@@ -110,3 +110,10 @@
     align-items: center;
     font-size: 9px;
 }
+
+.svg_button {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+}
