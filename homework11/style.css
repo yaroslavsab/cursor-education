@@ -48,3 +48,21 @@
     height: 29px;
     text-align: center;
 }
+
+.btn-lg {
+    width: 33px;
+    height: 29px;
+    background-color: #0d6efd;
+}
+
+.btn-outline-primary {
+    border-color: white;
+    width: 33px;
+    height: 29px;
+}
+
+.name_text {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 17px;
+}
