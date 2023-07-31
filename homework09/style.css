@@ -561,6 +561,10 @@ body {
     .features_item_svg {
         fill: #00ADEE;
     }
+
+    .dot {
+        display: none;
+    }
 }
 
 .fourth {
