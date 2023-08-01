@@ -5,6 +5,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
 .nav {
@@ -17,12 +18,70 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Roboto;
 }
-
 .nav_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 60px;
   list-style: none;
+}
+.nav_list-link {
+  color: var(--colour-main-blue-500, #505F98);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
+}
+.nav .logo {
+  color: var(--colour-logo-primary, #37447E);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 38px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  text-decoration: none;
+}
+.nav_button {
+  border-radius: 2px;
+  background: var(--colour-main-blue-800, #111B47);
+  color: var(--colour-secondary-white-100-general, #FFF);
+  text-align: center;
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 160px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.main .product_heder {
+  color: var(--colour-main-blue-900, #091133);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  /* Medium 50 */
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px;
+  /* 132% */
+  letter-spacing: 1px;
 }

@@ -4,21 +4,31 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="normalize.css")
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com",crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap",rel="stylesheet")
         title Препроцесори
     body 
-       header(class="header")
-        div(class="container")
-            nav(class="nav")
-                ul(class="nav_list")
+       header.header
+        .container
+            nav.nav
+                ul.nav_list
+                    li.nav_list-item
+                        a(href="#", class="nav_list-link") Home
                     li(class="nav_list-item") 
-                        a(href="#", class="one") Home
+                        a(href="#", class="nav_list-link") About 
                     li(class="nav_list-item") 
-                        a(href="#", class="one") About 
-                    li(class="nav_list-item") 
-                        a(href="#", class="one") Contact
-                a(href="#") 
-                    span(class="logo") Landie 
+                        a(href="#", class="nav_list-link") Contact
+                a(href="#", class="logo") Landie 
                 button(type="button", class="nav_button") Buy Now   
+       main.main
+            .container
+                section.product 
+                    .product_container 
+                        h1.product_heder Introduce Your Product Quickly & Effectively
+                        p.product_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        .product_buttons 
+                        button.product_button(type="button") Purchase UI Kit
+                        button.product_button(type="button") Learn More
+
