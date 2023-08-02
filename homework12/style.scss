@@ -1,11 +1,39 @@
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+    background-image: url("../homework12/img/designer_1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 940px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5px;
+}
+
+.button {
+    border-radius: 2px;
+    background: var(--colour-main-blue-800, #111B47);
+    color: var(--colour-secondary-white-100-general, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 160px;
+    height: 26px;
+    cursor: pointer;
 }
 
 .nav {
@@ -18,6 +46,7 @@ body {
         display: flex;
         gap: 60px;
         list-style: none;
+        padding: 0;
 
         &-link {
             color: var(--colour-main-blue-500, #505F98);
@@ -39,41 +68,62 @@ body {
         text-decoration: none;
     }
 
-    &_button {
-        border-radius: 2px;
-        background: var(--colour-main-blue-800, #111B47);
-        color: var(--colour-secondary-white-100-general, #FFF);
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 18px;
-
-        width: 160px;
-        height: 26px;
-        cursor: pointer;
-    }
+    &_button {}
 
 }
 
 .main {
     .product {
-        &_heder {
+        &_title {
             color: var(--colour-main-blue-900, #091133);
             font-feature-settings: 'clig' off, 'liga' off;
-
-            /* Medium 50 */
             font-family: Roboto;
             font-size: 50px;
-            font-style: normal;
             font-weight: 500;
             line-height: 66px;
-            /* 132% */
             letter-spacing: 1px;
+
+        }
+
+        &_container {
+            max-width: 50%;
+            padding: 260px 0 390px 0;
+        }
+
+        &_text {
+            color: var(--colour-main-blue-500, #505F98);
+            font-feature-settings: 'clig' off, 'liga' off;
+            /* Regular 18 */
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 70px;
+            /* 166.667% */
+        }
+
+        &_buttons {
+            display: flex;
+            gap: 30px;
+        }
+
+        &_button {
+            display: inline-block;
+            width: 189px;
+            height: 36px;
+            margin-right: 30px;
+            border: 2px solid var(--colour-main-blue-900, #091133);
+            background-color: #FFF;
+            color: #091133;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            transition: all 0.5s ease;
+        }
+
+        &_button:hover {
+            background-color: #091133;
+            color: #FFF;
         }
     }
 }
