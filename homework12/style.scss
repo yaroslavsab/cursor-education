@@ -115,7 +115,7 @@ body {
             margin-right: 30px;
             border: 2px solid $main-blue-900;
             background-color: #FFF;
-            color: #091133;
+            color: $main-blue-900;
             font-size: 16px;
             font-weight: 500;
             line-height: 26px;
@@ -132,6 +132,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 100px;
 
 
         &_title {
@@ -177,4 +178,34 @@ body {
         }
 
     }
+
+    .lights {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+        flex-wrap: wrap;
+
+
+        &_text {
+            width: 40%;
+        }
+    }
+
+    .price {
+        text-align: center;
+
+        &_title {
+            color: $main-blue-900;
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 48px;
+        }
+
+        &_button {
+            display: inline;
+        }
+    }
+
 }
