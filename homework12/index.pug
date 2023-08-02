@@ -10,6 +10,7 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap",rel="stylesheet")
         title Препроцесори
     body 
+      .wrapper
        header.header
         .container
             nav.nav
@@ -21,14 +22,21 @@ html(lang="en")
                     li(class="nav_list-item") 
                         a(href="#", class="nav_list-link") Contact
                 a(href="#", class="logo") Landie 
-                button(type="button", class="nav_button") Buy Now   
+                button(type="button", class="nav_button button") Buy Now   
        main.main
             .container
                 section.product 
                     .product_container 
-                        h1.product_heder Introduce Your Product Quickly & Effectively
+                        h1.product_title Introduce Your Product Quickly & Effectively
                         p.product_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                         .product_buttons 
-                        button.product_button(type="button") Purchase UI Kit
-                        button.product_button(type="button") Learn More
-
+                        button.product_button.button(type="button") Purchase UI Kit
+                        button.product_button.button(type="button") Learn More
+                section.light 
+                    .light_left
+                        h2.light_title Light, Fast & Powerful
+                        p.light_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        .goes 
+                            img(src="../", alt="")
+                        .goes 
+                            
