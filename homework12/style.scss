@@ -1,3 +1,10 @@
+$main-blue-800: #111B47;
+$main-blue-500: #505F98;
+$logo-primary: #37447E;
+$main-blue-900: #091133;
+$main-blue-400: #6F7CB2;
+$main-grey-600: #5D6970;
+
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 1440px;
@@ -20,10 +27,9 @@ body {
 
 .button {
     border-radius: 2px;
-    background: var(--colour-main-blue-800, #111B47);
-    color: var(--colour-secondary-white-100-general, #FFF);
+    background: $main-blue-800;
+    color: #FFF;
     text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,8 +55,7 @@ body {
         padding: 0;
 
         &-link {
-            color: var(--colour-main-blue-500, #505F98);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: $main-blue-500;
             text-decoration: none;
             font-weight: 400;
             line-height: 24px;
@@ -59,8 +64,7 @@ body {
     }
 
     .logo {
-        color: var(--colour-logo-primary, #37447E);
-        font-feature-settings: 'clig' off, 'liga' off;
+        color: $logo-primary;
         font-size: 26px;
         font-weight: 900;
         line-height: 38px;
@@ -75,8 +79,7 @@ body {
 .main {
     .product {
         &_title {
-            color: var(--colour-main-blue-900, #091133);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: $main-blue-900;
             font-family: Roboto;
             font-size: 50px;
             font-weight: 500;
@@ -91,8 +94,7 @@ body {
         }
 
         &_text {
-            color: var(--colour-main-blue-500, #505F98);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: $main-blue-500;
             /* Regular 18 */
             font-family: Roboto;
             font-size: 18px;
@@ -108,11 +110,10 @@ body {
         }
 
         &_button {
-            display: inline-block;
             width: 189px;
             height: 36px;
             margin-right: 30px;
-            border: 2px solid var(--colour-main-blue-900, #091133);
+            border: 2px solid $main-blue-900;
             background-color: #FFF;
             color: #091133;
             font-size: 16px;
@@ -122,8 +123,58 @@ body {
         }
 
         &_button:hover {
-            background-color: #091133;
+            background-color: $main-blue-900;
             color: #FFF;
         }
+    }
+
+    .light {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &_title {
+            color: $main-blue-900;
+            /* Medium 36 */
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 48px;
+            /* 133.333% */
+        }
+
+        &_text {
+            color: $main-blue-400;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 26px;
+            /* 162.5% */
+        }
+
+
+        .goes_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        .goes_title {
+            color: $main-blue-900;
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        .goes_text {
+            color: $main-grey-600;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            /* 150% */
+        }
+
     }
 }
