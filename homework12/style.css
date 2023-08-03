@@ -1,10 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-size: 16px;
-}
-
 .wrapper {
   background-image: url("../homework12/img/designer_1.png");
   background-position: top right;
@@ -33,7 +26,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 18px;
   width: 160px;
@@ -43,7 +36,7 @@ body {
 
 .logo {
   color: #37447E;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 900;
   line-height: 38px;
   -webkit-box-flex: 0;
@@ -111,7 +104,6 @@ body {
   border: 2px solid #091133;
   background-color: #FFF;
   color: #091133;
-  font-weight: 500;
   line-height: 26px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -137,13 +129,11 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 48px;
-  /* 133.333% */
 }
 .main .light_text {
   color: #6F7CB2;
   font-weight: 400;
   line-height: 26px;
-  /* 162.5% */
 }
 .main .light .goes_container {
   display: -webkit-box;
@@ -221,7 +211,7 @@ body {
 .main .price_dol {
   color: #222F65;
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 500;
   line-height: 66px;
   letter-spacing: 1px;

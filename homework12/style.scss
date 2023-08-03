@@ -9,12 +9,15 @@ $main-blue-600: #37447E;
 $main-grey-400: #939EA4;
 $main-blue-300: #929ECC;
 
+@mixin fsize($rem) {
+    font-size: $rem;
+}
 
-body {
+@mixin body {
     font-family: 'Roboto', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
-    font-size: 16px;
+    @include fsize(16px);
 }
 
 .wrapper {
@@ -39,7 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Roboto;
-    font-size: 12px;
+    @include fsize(0.75rem);
     font-weight: 500;
     line-height: 18px;
     width: 160px;
@@ -49,7 +52,7 @@ body {
 
 .logo {
     color: $logo-primary;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 900;
     line-height: 38px;
     flex: 0 1 20%;
@@ -98,7 +101,7 @@ body {
 
         &_text {
             color: $main-blue-500;
-            font-size: 1.125rem;
+            @include fsize(1.125rem);
             font-weight: 400;
             line-height: 30px;
             margin-bottom: 70px;
@@ -117,7 +120,6 @@ body {
             border: 2px solid $main-blue-900;
             background-color: #FFF;
             color: $main-blue-900;
-            font-weight: 500;
             line-height: 26px;
             transition: all 0.5s ease;
         }
@@ -137,17 +139,15 @@ body {
 
         &_title {
             color: $main-blue-900;
-            font-size: 2.2rem;
+            @include fsize(2.2rem);
             font-weight: 500;
             line-height: 48px;
-            /* 133.333% */
         }
 
         &_text {
             color: $main-blue-400;
             font-weight: 400;
             line-height: 26px;
-            /* 162.5% */
         }
 
 
@@ -168,7 +168,7 @@ body {
         .goes_text {
             color: $main-grey-600;
             font-family: Roboto;
-            font-size: 0.75rem;
+            @include fsize(0.75rem);
             font-weight: 400;
             line-height: 18px;
         }
@@ -200,7 +200,7 @@ body {
         &_title {
             color: $main-blue-900;
             font-family: Roboto;
-            font-size: 2.25rem;
+            @include fsize(2.25rem);
             font-weight: 500;
             line-height: 48px;
         }
@@ -219,7 +219,7 @@ body {
         &_dol {
             color: $main-blue-700;
             font-family: Roboto;
-            font-size: 50px;
+            @include fsize(3.125rem);
             font-weight: 500;
             line-height: 66px;
             letter-spacing: 1px;
@@ -233,7 +233,7 @@ body {
         &_see {
             padding-top: 2rem;
             color: $main-grey-600;
-            font-size: 0.875rem;
+            @include fsize(0.875rem);
             font-weight: 400;
             line-height: 24px;
 
@@ -259,7 +259,7 @@ body {
         .footer_copyright {
             color: $main-grey-400;
             font-family: Roboto;
-            font-size: 0.875rem;
+            @include fsize(0.875rem);
             font-weight: 500;
             line-height: 24px;
         }
