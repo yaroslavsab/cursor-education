@@ -4,11 +4,16 @@ $logo-primary: #37447E;
 $main-blue-900: #091133;
 $main-blue-400: #6F7CB2;
 $main-grey-600: #5D6970;
+$main-blue-700: #222F65;
+$main-blue-600: #37447E;
+$main-grey-400: #939EA4;
+
 
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
+    font-size: 16px;
 
 }
 
@@ -42,6 +47,15 @@ body {
     cursor: pointer;
 }
 
+.logo {
+    color: $logo-primary;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 38px;
+    flex: 0 1 20%;
+    text-decoration: none;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -63,14 +77,7 @@ body {
 
     }
 
-    .logo {
-        color: $logo-primary;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 38px;
-        flex: 0 1 20%;
-        text-decoration: none;
-    }
+
 
     &_button {}
 
@@ -194,6 +201,12 @@ body {
 
     .price {
         text-align: center;
+        max-width: 50%;
+        margin: 237px auto 176px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
 
         &_title {
             color: $main-blue-900;
@@ -206,6 +219,75 @@ body {
         &_button {
             display: inline;
         }
+
+        &_text {
+            color: $main-blue-400;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 2rem;
+        }
+
+        &_dol {
+            color: $main-blue-700;
+            font-family: Roboto;
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 66px;
+            letter-spacing: 1px;
+        }
+
+        &_kit {
+            color: $main-blue-600;
+            line-height: 26px;
+        }
+
+        &_see {
+            padding-top: 2rem;
+            color: $main-grey-600;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
     }
 
+}
+
+.footer {
+    background-color: #E7ECFF;
+
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 68px 0 47px 0;
+        border-bottom: 1px solid #CDD1D4;
+
+        .footer_button {
+            width: 109px;
+        }
+
+        .footer_copyright {
+            color: $main-grey-400;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_icons {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0 30px;
+    }
 }
