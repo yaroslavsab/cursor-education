@@ -284,9 +284,6 @@
 }
 
 @media (max-width: 721px) {
-  img {
-    width: 100%;
-  }
   .nav_list {
     gap: 20px;
   }
@@ -327,7 +324,7 @@
     text-align: center;
     display: inline-block;
   }
-  .main .price {
+  .lights_img {
     max-width: 100%;
   }
 }

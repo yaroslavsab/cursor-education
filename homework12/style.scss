@@ -286,9 +286,7 @@ $main-blue-300: #929ECC;
 }
 
 @media(max-width: 721px) {
-    img {
-        width: 100%;
-    }
+    img {}
 
     .nav_list {
         gap: 20px;
@@ -335,7 +333,7 @@ $main-blue-300: #929ECC;
         }
     }
 
-    .main .price {
+    .lights_img {
         max-width: 100%;
     }
 }
