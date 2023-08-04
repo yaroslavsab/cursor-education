@@ -29,17 +29,6 @@ $light-accent: #18A0FB;
     min-height: 100vh;
 }
 
-.button {
-    width: 144px;
-    height: 36px;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 5px;
-
-}
 
 .button {
     width: 144px;
@@ -91,8 +80,6 @@ $light-accent: #18A0FB;
                 stroke: #18A0FB;
             }
         }
-
-
     }
 
     &--icon {
@@ -112,6 +99,12 @@ $light-accent: #18A0FB;
             margin-top: -3px;
         }
 
+    }
+
+    &--size {
+        &-56 {
+            width: 56px;
+        }
     }
 
 }
@@ -135,16 +128,20 @@ $light-accent: #18A0FB;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 740px;
+        gap: 20px;
 
     }
 
-    .bigButtons_button {
-        margin: 20px;
+    .bigButtons__right {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
     }
 
     .bigButtons__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 40px;
     }
 

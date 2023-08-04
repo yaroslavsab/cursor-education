@@ -29,17 +29,6 @@ hgroup {
 
 .button {
   width: 144px;
-  height: 36px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 5px;
-}
-
-.button {
-  width: 144px;
   height: 48px;
   color: #FFF;
   text-align: center;
@@ -110,6 +99,9 @@ hgroup {
 .button--icon svg:last-child {
   margin-top: -3px;
 }
+.button--size-56 {
+  width: 56px;
+}
 
 .title {
   color: var(--colors-light-description-color, #2C2C2C);
@@ -133,16 +125,23 @@ hgroup {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 740px;
+  gap: 20px;
 }
-.Buttons__big .bigButtons_button {
-  margin: 20px;
-}
-.Buttons__big .bigButtons__container {
+.Buttons__big .bigButtons__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.Buttons__big .bigButtons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 40px;
 }
