@@ -296,6 +296,14 @@ $main-blue-300: #929ECC;
         background-image: none;
     }
 
+    .container {
+        max-width: none;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
     .main .product_container {
         padding: 100px 0;
         max-width: 100%;
@@ -335,5 +343,11 @@ $main-blue-300: #929ECC;
 
     .lights_img {
         max-width: 100%;
+
+        &-item {
+            width: 100%;
+        }
     }
+
+
 }

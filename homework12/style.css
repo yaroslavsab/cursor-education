@@ -3,6 +3,7 @@
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 940px;
+  padding: 0 10px;
 }
 
 .container {
@@ -290,6 +291,15 @@
   .wrapper {
     background-image: none;
   }
+  .container {
+    max-width: none;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .main .product_container {
     padding: 100px 0;
     max-width: 100%;
@@ -326,5 +336,8 @@
   }
   .lights_img {
     max-width: 100%;
+  }
+  .lights_img-item {
+    width: 100%;
   }
 }
