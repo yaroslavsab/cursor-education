@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+    display: block;
+    width: 100%;
+}
+
+$light-accent: #18A0FB;
+
+.Buttons {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.button {
+    width: 144px;
+    height: 36px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+
+}
+
+.button {
+    width: 144px;
+    height: 48px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    display: inline-block;
+
+    &--color {
+        &-blue {
+            background: $light-accent;
+
+            svg {
+                stroke: #FFF;
+            }
+        }
+
+        &-disabled {
+            color: #878787;
+            background-color: rgba(224, 224, 224, 0.30);
+
+            svg {
+                stroke: #878787;
+            }
+        }
+
+        &-secondary {
+            color: #2C2C2C;
+            background-color: #FFF;
+            border: 1px solid #E0E0E0;
+
+            svg {
+                stroke: #2C2C2C;
+            }
+        }
+
+        &-focused {
+            color: #18A0FB;
+            border: 1px solid #18A0FB;
+            background-color: #FFF;
+
+            svg {
+                stroke: #18A0FB;
+            }
+        }
+
+
+    }
+
+    &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .button__svg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        svg:last-child {
+            margin-top: -3px;
+        }
+
+    }
+
+}
+
+.title {
+    color: var(--colors-light-description-color, #2C2C2C);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Buttons__big {
+    .bigButtons__title {
+        margin-bottom: 26px;
+    }
+
+    .bigButtons__left {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 740px;
+
+    }
+
+    .bigButtons_button {
+        margin: 20px;
+    }
+
+    .bigButtons__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+}
