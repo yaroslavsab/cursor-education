@@ -105,12 +105,22 @@ $light-accent: #18A0FB;
         &-56 {
             width: 56px;
         }
+
+        &-134 {
+            width: 134px;
+        }
+
+        &-small {
+            width: 111px;
+            height: 36px;
+            font-size: 13px;
+        }
     }
 
 }
 
 .title {
-    color: var(--colors-light-description-color, #2C2C2C);
+    color: #2C2C2C;
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
@@ -118,12 +128,17 @@ $light-accent: #18A0FB;
     line-height: normal;
 }
 
-.Buttons__big {
-    .bigButtons__title {
+.Buttons__big,
+.Buttons__small {
+    margin-bottom: 80px;
+
+    .bigButtons__title,
+    .smallButtons__title {
         margin-bottom: 26px;
     }
 
-    .bigButtons__left {
+    .bigButtons__left,
+    .smallButtons__left {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -132,17 +147,31 @@ $light-accent: #18A0FB;
 
     }
 
+    .smallButtons__left {
+        width: 600px;
+    }
+
     .bigButtons__right {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        flex-direction: column;
+
+        .right__top {
+            display: flex;
+        }
+
+        .right__bot {
+            display: flex;
+        }
 
     }
 
-    .bigButtons__container {
+    .bigButtons__container,
+    .smallButtons__container {
         display: flex;
         justify-content: space-around;
-        gap: 40px;
+        gap: 80px;
     }
 
 }
