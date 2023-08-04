@@ -151,7 +151,8 @@ $light-accent: #18A0FB;
         width: 600px;
     }
 
-    .bigButtons__right {
+    .bigButtons__right,
+    .smallButtons__right {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

@@ -150,7 +150,9 @@ hgroup {
   width: 600px;
 }
 .Buttons__big .bigButtons__right,
-.Buttons__small .bigButtons__right {
+.Buttons__big .smallButtons__right,
+.Buttons__small .bigButtons__right,
+.Buttons__small .smallButtons__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,13 +167,17 @@ hgroup {
           flex-direction: column;
 }
 .Buttons__big .bigButtons__right .right__top,
-.Buttons__small .bigButtons__right .right__top {
+.Buttons__big .smallButtons__right .right__top,
+.Buttons__small .bigButtons__right .right__top,
+.Buttons__small .smallButtons__right .right__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .Buttons__big .bigButtons__right .right__bot,
-.Buttons__small .bigButtons__right .right__bot {
+.Buttons__big .smallButtons__right .right__bot,
+.Buttons__small .bigButtons__right .right__bot,
+.Buttons__small .smallButtons__right .right__bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
