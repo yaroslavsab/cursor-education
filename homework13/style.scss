@@ -68,6 +68,7 @@ $light-accent: #18A0FB;
 
             svg {
                 stroke: #2C2C2C;
+
             }
         }
 
@@ -78,6 +79,14 @@ $light-accent: #18A0FB;
 
             svg {
                 stroke: #18A0FB;
+            }
+        }
+
+        &-orange {
+            background-color: #FF3E1D;
+
+            svg {
+                stroke: #FFF;
             }
         }
     }

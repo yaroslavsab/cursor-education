@@ -69,6 +69,12 @@ hgroup {
 .button--color-focused svg {
   stroke: #18A0FB;
 }
+.button--color-orange {
+  background-color: #FF3E1D;
+}
+.button--color-orange svg {
+  stroke: #FFF;
+}
 .button--icon {
   display: -webkit-box;
   display: -ms-flexbox;
