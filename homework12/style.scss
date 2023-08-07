@@ -349,5 +349,19 @@ $main-blue-300: #929ECC;
         }
     }
 
+    .footer {
+        .footer_top {
+            flex-direction: column;
+            row-gap: 2rem;
+
+        }
+
+        .footer_bottom {
+            flex-direction: column;
+        }
+    }
+
+
+
 
 }
