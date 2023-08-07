@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Playfair+Display&family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Major Mono Display", monospace;
   font-family: "Playfair Display", serif;
@@ -26,11 +31,17 @@ html {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../homeworkFinal/img/bg.png");
+  background: url("../homeworkFinal/img/bg.png") lightgray 50%;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  padding-top: 20px;
+}
+.header__subtitle {
+  margin-left: 0;
+}
+.header__subtitle::before {
+  display: none;
 }
 
 .logo_link {
@@ -45,7 +56,7 @@ html {
 .title {
   color: #FFF;
   font-family: Playfair Display;
-  font-size: 6.25rem;
+  font-size: 4.375rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -57,6 +68,20 @@ html {
   line-height: 1.1;
   /* 110% */
   letter-spacing: 4.8px;
+  position: relative;
+}
+.subtitle-right {
+  margin-left: 51px;
+}
+.subtitle::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 2px;
+  background-color: #D3BA74;
+  top: 50%;
+  left: -56px;
+  z-index: 5;
 }
 
 .text {
@@ -82,12 +107,21 @@ html {
   cursor: pointer;
 }
 
+.digit {
+  color: rgba(255, 255, 255, 0.13);
+  font-size: 11.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  /* 270px */
+}
+
 .header__container {
   max-width: 40%;
   margin-top: 11.75rem;
 }
 .header__container .header__title {
   margin-bottom: 8px;
+  font-size: 6.25rem;
 }
 .header__container .header__text {
   margin: 40px 0;
@@ -97,4 +131,25 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
+  background-color: #0A1E27;
+}
+.main .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.main .one__container {
+  margin: 160px 0 0 160px;
+}
+.main .one__digit {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.main .one__title {
+  margin: 12px 0 20px 0;
 }
