@@ -75,6 +75,12 @@ hgroup {
 .button--color-orange svg {
   stroke: #FFF;
 }
+.button--color-green {
+  background-color: #00D200;
+}
+.button--color-green svg {
+  stroke: #FFF;
+}
 .button--icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,15 +112,25 @@ hgroup {
   margin-top: -3px;
 }
 .button--size-56 {
-  width: 56px;
+  width: 3.5rem;
 }
 .button--size-134 {
-  width: 134px;
+  width: 8.375rem;
 }
 .button--size-small {
-  width: 111px;
-  height: 36px;
-  font-size: 13px;
+  width: 6.93rem;
+  height: 2.25rem;
+  font-size: 0.8rem;
+}
+.button--size-roundSmall {
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.button--size-roundBig {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
 }
 
 .title {
