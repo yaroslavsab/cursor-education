@@ -122,6 +122,14 @@ hgroup {
   height: 2.25rem;
   font-size: 0.8rem;
 }
+.button--size-square {
+  width: 3rem;
+  height: 2.25rem;
+}
+.button--size-squaresml {
+  width: 3.625rem;
+  height: 2.25rem;
+}
 .button--size-roundSmall {
   border-radius: 50%;
   width: 2.25rem;
@@ -131,6 +139,15 @@ hgroup {
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+}
+.button--size-tagbig {
+  width: 4.06rem;
+  height: 1.75rem;
+  font-size: 0.8rem;
+}
+.button--size-tagsmall {
+  width: 3.19rem;
+  height: 1.75rem;
 }
 
 .title {
@@ -214,4 +231,14 @@ hgroup {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 80px;
+}
+
+.tag__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
 }
