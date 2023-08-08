@@ -231,4 +231,10 @@ $light-accent: #18A0FB;
     width: 15%;
     flex-wrap: wrap;
     gap: 5px;
+
+    .tag__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
