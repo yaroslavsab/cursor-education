@@ -142,11 +142,14 @@ html {
         display: flex;
         justify-content: space-between;
         position: relative;
+        flex-direction: column;
 
 
 
         &__container {
             margin: 160px 0 0 160px;
+            display: flex;
+            justify-content: space-between;
         }
 
         &__digit {
