@@ -223,6 +223,12 @@
 .main .two__img-item {
   max-width: 100%;
 }
+.main .three__subtitle {
+  margin-left: 98px;
+}
+.main .three__head {
+  padding-top: 142px;
+}
 .main .total {
   display: -webkit-box;
   display: -ms-flexbox;
