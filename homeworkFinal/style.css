@@ -103,6 +103,12 @@
   /* 150% */
   background: transparent;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  background: #eee7e7;
+  color: #0A1E27;
 }
 
 .digit {

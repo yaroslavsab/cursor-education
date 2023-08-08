@@ -107,6 +107,12 @@ $yellow-subtitle: #D3BA74;
     /* 150% */
     background: transparent;
     cursor: pointer;
+    transition: all .3s ease 0s;
+
+    &:hover {
+        background: #eee7e7;
+        color: #0A1E27;
+    }
 }
 
 .digit {
