@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Playfair+Display&family=Poppins:wght@300;400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 
 $yellow-subtitle: #D3BA74;
 
-html {
+* {
     font-family: 'Major Mono Display', monospace;
     font-family: 'Playfair Display', serif;
     font-family: 'Poppins', sans-serif;
@@ -94,6 +91,7 @@ html {
     color: rgba(255, 255, 255, 0.80);
     font-weight: 300;
     line-height: 1.5;
+    font-family: Poppins;
     /* 150% */
 }
 
@@ -117,6 +115,7 @@ html {
     font-size: 11.25rem;
     font-weight: 600;
     line-height: 1.5;
+    font-family: Poppins;
     /* 270px */
 }
 
