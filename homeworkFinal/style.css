@@ -177,8 +177,8 @@
 .main .one__img,
 .main .three__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 512px;
+          flex: 0 0 512px;
 }
 .main .one__listimg,
 .main .three__listimg {
