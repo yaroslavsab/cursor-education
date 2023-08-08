@@ -269,3 +269,44 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.main .explore__img {
+  width: 38.625rem;
+  height: 23.875rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+.main .explore__img-item {
+  max-width: 100%;
+}
+.main .explore__content {
+  padding-top: 1.6rem;
+}
+.main .explore__title {
+  margin-bottom: 0.75rem;
+}
+.main .explore__text {
+  margin-bottom: 4rem;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.81rem 0;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.75rem;
+}
+.footer__social svg {
+  fill: #FFF;
+}
