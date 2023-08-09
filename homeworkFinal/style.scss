@@ -306,6 +306,12 @@ $yellow-subtitle: #D3BA74;
     &__social {
         svg {
             fill: #FFF;
+            opacity: 0.5;
+            transition: all 0.3s ease 0s;
+        }
+
+        svg:hover {
+            opacity: 0.8;
         }
     }
 }
