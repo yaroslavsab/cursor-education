@@ -24,6 +24,7 @@ $yellow-subtitle: #D3BA74;
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 15px;
+
 }
 
 .header {
@@ -305,6 +306,57 @@ $yellow-subtitle: #D3BA74;
     &__social {
         svg {
             fill: #FFF;
+        }
+    }
+}
+
+@media(max-width: 721px) {
+
+    .logo {
+        text-align: center;
+    }
+
+    .header__container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main {
+
+        .one {
+            margin-top: 0;
+
+            &__container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &__listimg {
+                justify-content: center;
+            }
+        }
+
+        .two {
+            flex-wrap: wrap-reverse;
+            margin-top: 0;
+            justify-content: center;
+        }
+
+        .three {
+            &__container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &__listimg {
+                justify-content: center;
+            }
+        }
+
+
+        .explore {
+            flex-wrap: wrap;
+            text-align: center;
         }
     }
 }
