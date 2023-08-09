@@ -310,7 +310,7 @@ $yellow-subtitle: #D3BA74;
     }
 }
 
-@media(max-width: 721px) {
+@media(max-width: 768px) {
 
     .logo {
         text-align: center;
@@ -319,6 +319,11 @@ $yellow-subtitle: #D3BA74;
     .header__container {
         max-width: 100%;
         text-align: center;
+        margin-top: 10rem;
+    }
+
+    .title {
+        font-size: 3rem;
     }
 
     .main {
@@ -334,18 +339,36 @@ $yellow-subtitle: #D3BA74;
             &__listimg {
                 justify-content: center;
             }
+
+            &__img {
+                text-align: center;
+                flex: 0 0 100%;
+            }
         }
 
         .two {
             flex-wrap: wrap-reverse;
             margin-top: 0;
             justify-content: center;
+
+            &__img {
+                text-align: center;
+                flex: 0 0 100%;
+            }
         }
 
         .three {
+            margin-top: 0;
+
+            &__img {
+                text-align: center;
+                flex: 0 0 100%;
+            }
+
             &__container {
                 flex-wrap: wrap;
                 justify-content: center;
+
             }
 
             &__listimg {
@@ -357,6 +380,58 @@ $yellow-subtitle: #D3BA74;
         .explore {
             flex-wrap: wrap;
             text-align: center;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .header__container {
+        margin-top: 6rem;
+
+        .header__title {
+            font-size: 5rem;
+        }
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 0.875rem;
+    }
+
+
+    .main {
+        .total {
+            height: 39rem;
+            row-gap: 2rem;
+        }
+
+        .explore {
+            padding: 0;
+            gap: 2rem;
+        }
+    }
+
+    .digit {
+        font-size: 10rem;
+    }
+
+
+
+
+    .footer {
+        &__container {
+            flex-direction: column;
+            row-gap: 3rem;
+            justify-content: center;
+            margin: 1rem 0;
+
+        }
+
+        .logo_link {
+            font-size: 1.5rem;
         }
     }
 }
