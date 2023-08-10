@@ -199,13 +199,24 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin: 60px 0;
 }
 .main .one__listimg .one__items,
-.main .three__listimg .one__items {
+.main .one__listimg .three__items,
+.main .three__listimg .one__items,
+.main .three__listimg .three__items {
   width: 299px;
   height: 197px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.main .one__listimg .one__items:hover,
+.main .one__listimg .three__items:hover,
+.main .three__listimg .one__items:hover,
+.main .three__listimg .three__items:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .main .two {
   display: -webkit-box;
