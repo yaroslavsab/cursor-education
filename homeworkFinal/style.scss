@@ -11,6 +11,10 @@ $yellow-subtitle: #D3BA74;
     font-family: 'Poppins', sans-serif;
 }
 
+// html {
+//     scroll-behavior: smooth;
+// }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -94,6 +98,10 @@ $yellow-subtitle: #D3BA74;
 }
 
 .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     border-radius: 4px;
     border: 1px solid #FFF;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
