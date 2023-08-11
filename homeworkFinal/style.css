@@ -208,8 +208,8 @@
 .main .three__listimg .three__items {
   width: 299px;
   height: 197px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main .one__listimg .one__items:hover,
 .main .one__listimg .three__items:hover,
