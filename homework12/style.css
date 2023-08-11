@@ -17,15 +17,9 @@
   background: #111B47;
   color: #FFF;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: Roboto;
   font-size: 0.75rem;
   font-weight: 500;
@@ -40,27 +34,17 @@
   font-size: 1.625rem;
   font-weight: 900;
   line-height: 38px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
+  flex: 0 1 20%;
   text-decoration: none;
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-family: Roboto;
 }
 .nav_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 60px;
   list-style: none;
@@ -93,8 +77,6 @@
   margin-bottom: 70px;
 }
 .main .product_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
@@ -106,7 +88,6 @@
   background-color: #FFF;
   color: #091133;
   line-height: 26px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .main .product_button:hover {
@@ -114,15 +95,9 @@
   color: #FFF;
 }
 .main .light {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 100px;
 }
 .main .light_title {
@@ -137,15 +112,9 @@
   line-height: 26px;
 }
 .main .light .goes_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 80px;
   gap: 30px;
 }
@@ -162,18 +131,11 @@
   line-height: 18px;
 }
 .main .lights {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 150px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .main .lights_text {
   width: 40%;
@@ -182,16 +144,9 @@
   text-align: center;
   max-width: 50%;
   margin: 237px auto 176px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .main .price_title {
   color: #091133;
@@ -233,15 +188,9 @@
   background-color: #E7ECFF;
 }
 .footer_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 68px 0 47px 0;
   border-bottom: 1px solid #CDD1D4;
 }
@@ -256,30 +205,18 @@
   line-height: 24px;
 }
 .footer .footer_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer .footer_bottom .nav_list-link {
   color: #929ECC;
 }
 .footer .footer_icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 30px;
   padding: 20px 0 30px;
 }
@@ -295,10 +232,7 @@
     max-width: none;
   }
   .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 1rem;
   }
   .main .product_container {
@@ -307,14 +241,11 @@
     text-align: center;
   }
   .main .product_container .product_buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     gap: 0;
   }
   .light {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
   .light .light_left {
     text-align: center;
@@ -323,9 +254,7 @@
     width: 90%;
   }
   .main .lights {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .main .lights .lights_text {
     width: 100%;
@@ -342,17 +271,11 @@
     width: 100%;
   }
   .footer .footer_top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 2rem;
     padding: 20px 0;
   }
   .footer .footer_bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-}
+}/*# sourceMappingURL=style.css.map */

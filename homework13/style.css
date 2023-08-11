@@ -82,31 +82,16 @@ hgroup {
   stroke: #FFF;
 }
 .button--icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .button--icon .button__svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .button--icon svg:last-child {
   margin-top: -3px;
@@ -173,14 +158,9 @@ hgroup {
 .Buttons__big .smallButtons__left,
 .Buttons__small .bigButtons__left,
 .Buttons__small .smallButtons__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 740px;
   gap: 20px;
 }
@@ -192,64 +172,40 @@ hgroup {
 .Buttons__big .smallButtons__right,
 .Buttons__small .bigButtons__right,
 .Buttons__small .smallButtons__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .Buttons__big .bigButtons__right .right__top,
 .Buttons__big .smallButtons__right .right__top,
 .Buttons__small .bigButtons__right .right__top,
 .Buttons__small .smallButtons__right .right__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .Buttons__big .bigButtons__right .right__bot,
 .Buttons__big .smallButtons__right .right__bot,
 .Buttons__small .bigButtons__right .right__bot,
 .Buttons__small .smallButtons__right .right__bot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .Buttons__big .bigButtons__container,
 .Buttons__big .smallButtons__container,
 .Buttons__small .bigButtons__container,
 .Buttons__small .smallButtons__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   gap: 80px;
 }
 
 .tag__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 15%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .tag__buttons .tag__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
