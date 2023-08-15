@@ -367,4 +367,21 @@
   .footer .logo_link {
     font-size: 1.5rem;
   }
+}
+@media (max-width: 375px) {
+  .header__container .header__title {
+    font-size: 4rem;
+  }
+  .main .one__head {
+    padding: 0;
+  }
+  .main .digit-absolute {
+    position: static;
+  }
+  .main .two__content {
+    padding: 0;
+  }
+  .main .three__head {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

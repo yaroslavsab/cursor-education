@@ -453,3 +453,30 @@ $yellow-subtitle: #D3BA74;
         }
     }
 }
+
+@media(max-width: 375px) {
+    .header__container {
+
+        .header__title {
+            font-size: 4rem;
+        }
+    }
+
+    .main {
+        .one__head {
+            padding: 0;
+        }
+
+        .digit-absolute {
+            position: static;
+        }
+
+        .two__content {
+            padding: 0;
+        }
+
+        .three__head {
+            padding: 0;
+        }
+    }
+}
