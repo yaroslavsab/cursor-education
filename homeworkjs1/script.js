@@ -16,4 +16,6 @@ let sumFloor = Math.floor(cola) + Math.floor(iceCreem) + Math.floor(meat);
 
 console.log("Сума товарів заокруглена до сотень " + Math.round(sumFloor / 100) * 100);
 
-console.log(sumFloor % 2 === 0)
+console.log(sumFloor % 2 === 0);
+
+console.log(500 - sum);
