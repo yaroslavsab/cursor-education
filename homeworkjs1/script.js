@@ -19,3 +19,11 @@ console.log("Сума товарів заокруглена до сотень " 
 console.log(sumFloor % 2 === 0);
 
 console.log(500 - sum);
+
+console.log((sum / 3).toFixed(2));
+
+let discount = Math.random() * 10;
+console.log(discount);
+console.log((sum - ((sum / 100) * discount)).toFixed(2));
+
+console.log("Чистий прибуток " + ((sum / 2) - ((sum / 100) * discount)).toFixed(0))
