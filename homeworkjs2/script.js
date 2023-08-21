@@ -14,12 +14,11 @@ if (isNaN(m)) {
 let pair = confirm("Чи пропускати пані числа?");
 
 let sum = 0;
-let parni = 0;
 
 for (let i = n; i <= m; i++) {
-    if (pair && i % 2 === 0) {
-        parni += i;
-    } else {
+    if (pair && (i % 2 !== 0)) {
+        sum += i;
+    } else if (!pair) {
         sum += i;
     }
 }
@@ -27,5 +26,5 @@ for (let i = n; i <= m; i++) {
 
 
 
-console.log(sum);
-console.log(parni)
+
+console.log("Сума - " + sum);
