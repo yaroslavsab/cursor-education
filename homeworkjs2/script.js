@@ -23,8 +23,4 @@ for (let i = n; i <= m; i++) {
     }
 }
 
-
-
-
-
 console.log("Сума - " + sum);
