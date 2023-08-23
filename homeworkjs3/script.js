@@ -44,3 +44,13 @@ function formatName(name) {
 }
 
 console.log("Форматоване імя - ", formatName("вІтЯ"));
+
+function getRandomPassword(lengt = 8) {
+    let pas = "";
+    for (let i = 0; i <= length; i++) {
+        pas += (Math.random() * 10).toFixed(0).slice;
+    }
+    return +pas;
+}
+
+console.log(getRandomPassword(4))
