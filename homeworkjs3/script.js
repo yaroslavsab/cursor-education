@@ -33,3 +33,14 @@ function pow(n, step) {
 }
 
 console.log("Ступінь числа -", pow(6, 2));
+
+function formatName(name) {
+    if (!name) {
+        return "";
+    }
+
+    const formattedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    return formattedName;
+}
+
+console.log("Форматоване імя - ", formatName("вІтЯ"));
