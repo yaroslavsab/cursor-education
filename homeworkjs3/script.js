@@ -45,12 +45,12 @@ function formatName(name) {
 
 console.log("Форматоване імя - ", formatName("вІтЯ"));
 
-function getRandomPassword(lengt = 8) {
-    let pas = "";
-    for (let i = 0; i <= length; i++) {
-        pas += (Math.random() * 10).toFixed(0).slice;
-    }
-    return +pas;
+function getRandomPassword(length = 8) {
+    const min = Math.pow(10, length - 1);
+    const max = Math.pow(10, length) - 1;
+    const randomPassword = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomPassword;
 }
 
-console.log(getRandomPassword(4))
+
+console.log(getRandomPassword())
