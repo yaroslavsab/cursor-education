@@ -94,3 +94,11 @@ kidding?"
 Приклад: replaceBadWords("It's bullshit!") -> "It's bull****!"
 */
 
+function replaceBadWords(string) {
+
+    let words = [];
+    words = string.join(' ');
+    console.log(words);
+}
+
+replaceBadWords("Holy shit!")
