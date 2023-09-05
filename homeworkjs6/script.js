@@ -54,5 +54,22 @@ console.log(getSubjects(0));
 */
 
 function getAverageMark(studentsNumber) {
-
+    let sum = 0, average = 0, count = 0;
+    const subjects2 = students[studentsNumber].subjects;
+    for (let key in subjects2) {
+        for (let i = 0; i < subjects2[key].length; i++) {
+            sum += subjects2[key][i];
+            count++;
+        }
+        average = sum / count;
+    }
+    return average.toFixed(2);
 }
+console.log(getAverageMark(0))
+
+/*
+Створіть функцію getStudentInfo(students[0]) --> { "course": 3, "name":
+"Tanya", "averageMark": 3.79} – яка повертає інформацію загального виду по
+переданому студенту (вам знадобиться функція з попереднього завдання).
+Повинна бути виведена інформація: курс, ім'я, середня оцінка
+*/
