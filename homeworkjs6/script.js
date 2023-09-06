@@ -92,3 +92,33 @@ console.log(getStudentInfo(2));
 4.Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"]
 – яка повертає імена студентів у алфавітному порядку.
 */
+
+function getStudentsNames(students) {
+    let studentsNames = [];
+    for (let key in students) {
+        studentsNames.push(students[key].name)
+    }
+    return studentsNames.sort()
+}
+
+console.log(getStudentsNames(students));
+
+/*
+5. Створіть функцію getBestStudent(students) --> "Anton" – яка повертає
+кращого студента зі списку по показнику середньої оцінки.
+*/
+
+function getBestStudent(students) {
+    let bestStudentaverage = 0;
+    let bestStudent = "";
+    for (let key in students) {
+        if (getAverageMark(key) > bestStudentaverage) {
+            bestStudentaverage += getAverageMark(key);
+            bestStudent = students[key].name;
+        }
+    }
+    return bestStudent;
+}
+
+console.log(getBestStudent(students));
+
