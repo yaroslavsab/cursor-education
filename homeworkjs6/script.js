@@ -75,5 +75,20 @@ console.log(getAverageMark(0))
 */
 
 function getStudentInfo(studentsNumber) {
+    let studetInfo = {}
 
+    for (let key in students[studentsNumber]) {
+        studetInfo.course = students[studentsNumber].course;
+        studetInfo.name = students[studentsNumber].name;
+        studetInfo.averageMark = getAverageMark(studentsNumber);
+    }
+    return studetInfo;
 }
+
+
+console.log(getStudentInfo(2));
+
+/*
+4.Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"]
+– яка повертає імена студентів у алфавітному порядку.
+*/
