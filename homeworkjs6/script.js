@@ -122,3 +122,29 @@ function getBestStudent(students) {
 
 console.log(getBestStudent(students));
 
+/*
+6. Створіть функцію calculateWordLetters("тест") --> { "т": 2, "е": 1, "с": 1 } – яка
+повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх
+повторень
+*/
+
+function calculateWordLetters(word) {
+    wordObj = {};
+
+    for (let i = 0; i < word.length; i++) {
+        const letter = word[i];
+
+        if (wordObj.hasOwnProperty(letter)) {
+            wordObj[letter] += 1;
+        } else {
+
+            wordObj[letter] = 1;
+        }
+
+
+    }
+    return wordObj;
+}
+let word = "тест";
+
+console.log(calculateWordLetters(word));
