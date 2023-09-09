@@ -49,3 +49,20 @@ console.log(getTotalTaxes.call(ukraine));
 profit = salary - taxes;
 для виводу в консоль кожні 10 секунд використайте setInterval
 */
+
+function getMySalary(country) {
+
+    let interval = setInterval(function (country) {
+        obj = {
+            salary: this.tax,
+            country
+        };
+        console.log(obj);
+
+    }, 10000);
+
+    clearInterval(interval);
+
+}
+console.log(getMySalary.call(ukraine))
+
