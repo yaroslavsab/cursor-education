@@ -51,18 +51,25 @@ profit = salary - taxes;
 */
 
 function getMySalary(country) {
+    let min = 1500;
+    let max = 2000;
+    let taxes = this.tax;
 
-    let interval = setInterval(function (country) {
-        obj = {
-            salary: this.tax,
-            country
-        };
-        console.log(obj);
-
+    let interval = setInterval(function (...args) {
+        let salary = Math.floor(Math.random() * (max - min + 1)) + min;
+        let profit = salary - taxes;
+        console.log(obj = {
+            salary,
+            taxes,
+            profit
+        });
     }, 10000);
 
-    clearInterval(interval);
+    setTimeout(function () {
+        clearInterval(interval);
+        console.log('Інтервал був зупинений після 90 секунд.');
+    }, 90000);
 
 }
-console.log(getMySalary.call(ukraine))
 
+getMySalary.call(ukraine)
