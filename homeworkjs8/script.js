@@ -10,10 +10,11 @@
 */
 
 class Student {
-    constructor(university, course, fullName) {
+    constructor(university, course, fullName, rating) {
         this.university = university;
         this.course = course;
         this.fullName = fullName;
+        this.rating = rating;
     }
 
     getInfo() {
@@ -21,13 +22,18 @@ class Student {
     }
 
     get marks() {
+        return console.log(this.rating);
+
+    }
+
+    set marks(value) {
 
     }
 }
 
-let Ostap = new Student("Вищої Школи Психотерапії м.Одеса", 1, "Остап Родоманський Бендер");
+let Ostap = new Student("Вищої Школи Психотерапії м.Одеса", 1, "Остап Родоманський Бендер", [5, 4, 4, 5]);
 Ostap.getInfo();
-
+Ostap.marks;
 
 /*
 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4,
