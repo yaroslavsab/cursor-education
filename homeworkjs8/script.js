@@ -15,6 +15,7 @@ class Student {
         this.course = course;
         this.fullName = fullName;
         this.rating = rating;
+        this.isDismissed = false;
     }
 
     getInfo() {
@@ -22,15 +23,28 @@ class Student {
     }
 
     getAverageMark() {
-        let count = 0;
         let sum = 0;
+        if (this.isDismissed) {
+            return null;
+        }
+        if (this.rating.length === 0) {
+            return 0;
+        }
         for (let i = 0; i < this.rating.length; i++) {
             sum += this.rating[i];
-            count++;
         }
-        return console.log(sum / count);
+        return console.log(sum / this.rating.length);
     }
 
+    dismiss() {
+        this.isDismissed = true;
+        this.rating = null;
+    }
+
+    recover() {
+        this.isDismissed = false;
+        this.rating = [];
+    }
 
 
     get marks() {
@@ -39,8 +53,9 @@ class Student {
     }
 
     set marks(value) {
-        this.rating.push(value)
-        return console.log(this.rating);
+        if (!this.isDismissed) {
+            this.rating.push(value);
+        }
     }
 }
 
@@ -49,7 +64,10 @@ Ostap.getInfo();
 Ostap.marks;
 Ostap.marks = 5;
 Ostap.getAverageMark();
-
+Ostap.dismiss();
+console.log(Ostap.rating);
+Ostap.recover();
+console.log(Ostap.rating)
 /*
 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4,
 4, 5]
@@ -62,3 +80,34 @@ this.marks -> [5, 4, 4, 5, 5]
 помилок, просто повертається завжди null замість масиву оцінок)
 7. Створіть метод this.recover, який дозволить поновити студента
 */
+
+class BudgetStudent extends Student {
+    constructor(university, course, fullName, rating) {
+        super(university, course, fullName, rating);
+
+    }
+
+    getScholarship() {
+        console.log('Ви отримали 1400грн стипендії');
+    }
+
+}
+
+let student2 = new BudgetStudent();
+student2.getScholarship();
+
+/*
+Advanced
+1.Створіть новий клас BudgetStudent, який повністю наслідує клас Student
+2. Бюджетний студент може отримати стипендію за допомогою методу
+this.getScholarship.
+Отримання стипендії супроводжується виведенням інформації в консоль: Ви
+отримали 1400 грн. стипендії
+3. Метод отримання стипендії автоматично викликається кожні 30 секунд післе
+створення об'єкту. Підказка: викликайте його в constructor
+4. Студент отримує стипендію тільки в тому випадку, якщо середній бал у нього
+вище або дорівнює 4.0
+5. Якщо студента виключено, він не отримує стипендію (думаю це було і так
+очевидно :)
+*/
+
