@@ -21,19 +21,34 @@ class Student {
         console.log(`Студент ${this.course}-го курсу ${this.university} ${this.fullName}`)
     }
 
+    getAverageMark() {
+        let count = 0;
+        let sum = 0;
+        for (let i = 0; i < this.rating.length; i++) {
+            sum += this.rating[i];
+            count++;
+        }
+        return console.log(sum / count);
+    }
+
+
+
     get marks() {
         return console.log(this.rating);
 
     }
 
     set marks(value) {
-
+        this.rating.push(value)
+        return console.log(this.rating);
     }
 }
 
 let Ostap = new Student("Вищої Школи Психотерапії м.Одеса", 1, "Остап Родоманський Бендер", [5, 4, 4, 5]);
 Ostap.getInfo();
 Ostap.marks;
+Ostap.marks = 5;
+Ostap.getAverageMark();
 
 /*
 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4,
