@@ -1,16 +1,13 @@
-// Функція для генерації одного квадрата з випадковим кольором
-function generateSquare() {
-    const container = document.getElementById('container');
-    const square = document.createElement('div');
-    square.classList.add('square');
-    container.appendChild(square);
-    container.style.width = '300px';
-}
+
 
 // Функція для генерації 25 квадратів
 function generateBlocks() {
     for (let i = 0; i < 25; i++) {
-        generateSquare();
+        const container = document.getElementById('container');
+        const square = document.createElement('div');
+        square.classList.add('square');
+        container.appendChild(square);
+        container.style.width = '250px';
     }
 }
 
