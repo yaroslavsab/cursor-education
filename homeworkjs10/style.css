@@ -5,9 +5,26 @@ body {
 .container {
     display: flex;
     width: 70%;
-    height: 300px;
     background-color: cyan;
     gap: 10px;
     margin: 250px auto;
     font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    border: 1px solid black;
+    width: 75px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(187, 114, 19);
+}
+
+.pressed {
+    text-shadow: 0 0 5px white;
+    color: wheat;
+    transition: all 0.7s;
+    border-color: rgb(33, 67, 97);
+    transform: scale(1.1);
 }

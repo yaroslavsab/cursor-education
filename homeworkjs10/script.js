@@ -3,7 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     window.addEventListener('keydown', (e) => {
-        cont.innerHTML += e.key;
+        let audio = document.querySelector(`audio[data-letter="${e.key}"]`);
+        let press = document.querySelector(`.letter[data-key="${e.key}"]`)
+        if (!audio) {
+            return
+        }
+        audio.currentTime = 0;
+        audio.play();
+        press.classList.add('pressed');
     });
 
 
