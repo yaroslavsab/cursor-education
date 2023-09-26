@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let cont = document.getElementById('container');
 
     function playSound(e) {
         const audio = document.querySelector(`audio[data-letter="${e.key}"]`);
