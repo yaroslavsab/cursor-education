@@ -1,5 +1,12 @@
-function renderCharacters() {
+function renderCharacters({ name, birth_year, gender }) {
+    const div = document.createElement('div');
+    const h1 = document.createElement('h2');
 
+    h1.textContent = name;
+
+    div.append(h1);
+    document.body.append(div);
+    console.log(name, birth_year, gender);
 }
 
 
@@ -8,7 +15,7 @@ function fetchCharacters(character) {
     fetch(character)
         .then((res) => res.json())
         .then((character) => {
-            console.log(character.name)
+            renderCharacters(character)
         })
 }
 
