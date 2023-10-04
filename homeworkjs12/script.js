@@ -2,7 +2,7 @@ function renderCharacters({ name, birth_year, gender }) {
 
     const userTemplate = `
     <div class="character">
-    <h2 class="character_title">${name}</h2>
+    <h2 class="character_title"><span>Ім'я:</span> ${name}</h2>
     <p class="year">Рік народження: ${birth_year}</p>
     <span>стать: ${gender}</span>
     </div>

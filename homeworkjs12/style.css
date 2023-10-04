@@ -1,10 +1,32 @@
 body {
     background-color: rgb(75, 197, 111);
     font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+.first {
+    margin: 0 auto;
+    text-align: center;
+}
+
+span {
+    color: black;
+    font-style: italic;
 }
 
 button {
     cursor: pointer;
+    border-style: none;
+    background-color: rgb(151, 151, 41);
+    border: 1px solid rgb(182, 128, 128);
+    height: 50px;
+    color: rgb(19, 41, 61);
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    background-color: rgb(197, 197, 55);
+    color: rgb(48, 43, 43);
 
 }
 
