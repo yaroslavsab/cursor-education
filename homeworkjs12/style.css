@@ -1,11 +1,16 @@
 body {
     background-color: rgb(75, 197, 111);
-    display: flex;
-    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
 }
 
-div {
+button {
+    cursor: pointer;
+
+}
+
+div.character {
     border: 1px solid rgb(114, 57, 57);
+    border-radius: 5px;
     padding: 5px;
     background-color: rgb(224, 181, 117);
     margin: 10px;
@@ -13,8 +18,13 @@ div {
 
 }
 
-div:hover {
+div.character:hover {
     background-color: rgb(182, 149, 99);
+}
+
+.character_title {
+    font-size: 700;
+    color: rgb(34, 121, 121);
 }
 
 h1 {}
