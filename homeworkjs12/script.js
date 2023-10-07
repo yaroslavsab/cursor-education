@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const filmTemplate = `
     <div class="character">
-    <h2 class="character_title"><span>Ім'я:</span> ${name}</h2>
+    <h2 class="character_title"><span>Ім'я персонажа:</span> ${name}</h2>
     <p class="year">Рік народження: ${birth_year}</p>
     <span>стать: ${gender}</span>
     </div>
@@ -13,10 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
         second.innerHTML += filmTemplate;
     }
 
+    const input_number = document.querySelector('#film_number');
+    let inputValue = "";
+    input_number.addEventListener('input', e => {
+        inputValue = e.target.value;
+    })
     const btn = document.querySelector('#refresh_button');
     btn.addEventListener('click', () => {
         second.innerHTML = '';
-        getSwapi()
+        getSwapi(inputValue)
     })
 
     function fetchCharacters(character) {
@@ -27,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
             })
     }
 
-    function getSwapi() {
-        fetch("https://swapi.dev/api/films/2")
+    function getSwapi(id) {
+        fetch(`https://swapi.dev/api/films/${id}`)
             .then((res) => res.json())
             .then((films) => {
                 films.characters.forEach(character => {
@@ -40,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function renderPlanet({ name, diameter, population }) {
         const planetTemplate = `
         <div class="character">
-        <h2 class="character_title"><span>Ім'я:</span> ${name}</h2>
+        <h2 class="character_title"><span>Назва планети</span> ${name}</h2>
         <p class="year">Діаметр: ${diameter}</p>
         <span>Населення: ${population}</span>
         </div>
@@ -55,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
             renderPlanet(planet);
         })
 
-        console.log(resp.results);
     }
 
     const nextbtn = document.querySelector('#next_button');
