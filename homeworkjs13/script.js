@@ -1,3 +1,6 @@
+import './styles/main.scss';
+
+
 function* infiniteGenerator() {
     let init = 1;
     for (let i = 0; i < Infinity; i++) {
