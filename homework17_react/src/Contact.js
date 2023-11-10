@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 export default function Contact() {
-  const contacts = [
+  const contactss = [
     {
       firstName: "Барней",
       lastName: "Стинсовський",
@@ -41,14 +41,22 @@ export default function Contact() {
       gender: "male"
     },
   ];
+  const [contacts, setContacts] = useState(contactss);
   const [inputText, setInputText] = useState("");
+  const [maleCheckbox, setMaleCheckbox] = useState(false);
+  const [femaleCheckbox, setFemaleCheckbox] = useState(false);
 
   const contactItems = contacts.filter(contact => {
-    if (inputText === "") {
-      return contact;
-    } else if (contact.firstName.toLowerCase().includes(inputText.toLowerCase()) || contact.lastName.toLowerCase().includes(inputText.toLowerCase()) || contact.phone.includes(inputText.toLowerCase())) {
-      return contact;
-    }
+    const isMatchingText = inputText === "" ||
+      contact.firstName.toLowerCase().includes(inputText.toLowerCase()) ||
+      contact.lastName.toLowerCase().includes(inputText.toLowerCase()) ||
+      contact.phone.includes(inputText);
+
+    const isMatchingGender = (maleCheckbox && contact.gender === "male") ||
+      (femaleCheckbox && contact.gender === "female") ||
+      (!maleCheckbox && !femaleCheckbox);
+
+    return isMatchingText && isMatchingGender;
   }).map((contact) => {
     return (<li key={contact.phone}>
       {contact.firstName + " "}
@@ -58,8 +66,14 @@ export default function Contact() {
   })
 
   const handleChange = (e) => {
-    e.preventDefault();
     setInputText(e.target.value);
+  };
+  const handleCheckboxChange = (gender) => {
+    if (gender === 'male') {
+      setMaleCheckbox(!maleCheckbox);
+    } else if (gender === 'female') {
+      setFemaleCheckbox(!femaleCheckbox);
+    }
   };
 
 
@@ -67,6 +81,14 @@ export default function Contact() {
   return (
     <div className="contact">
       <input onChange={handleChange} type='text' placeholder='Пошук' value={inputText} />
+      <label>
+        <input type="checkbox" checked={maleCheckbox} onChange={() => handleCheckboxChange('male')} />
+        Чоловік
+      </label>
+      <label>
+        <input type="checkbox" checked={femaleCheckbox} onChange={() => handleCheckboxChange('female')} />
+        Жінка
+      </label>
       <ul>{contactItems}</ul>
     </div>
   );
