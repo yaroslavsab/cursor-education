@@ -57,12 +57,6 @@ export default function Contact() {
       (!maleCheckbox && !femaleCheckbox);
 
     return isMatchingText && isMatchingGender;
-  }).map((contact) => {
-    return (<li key={contact.phone}>
-      {contact.firstName + " "}
-      {contact.lastName}<br />
-      {contact.phone}<br />
-    </li>)
   })
 
   const handleChange = (e) => {
@@ -89,7 +83,13 @@ export default function Contact() {
         <input type="checkbox" checked={femaleCheckbox} onChange={() => handleCheckboxChange('female')} />
         Жінка
       </label>
-      <ul>{contactItems}</ul>
+      <ul>{contactItems.map((contact, i) => {
+        return (<li key={i}>
+          {contact.firstName + " "}
+          {contact.lastName}<br />
+          {contact.phone}<br />
+        </li>)
+      })}</ul>
     </div>
   );
 }
